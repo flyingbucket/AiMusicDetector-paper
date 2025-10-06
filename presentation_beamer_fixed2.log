@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.30)  6 OCT 2025 18:36
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.30)  6 OCT 2025 22:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -538,21 +538,170 @@ Package: amsthm 2020/05/29 v2.20.6
 ) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamer/beamerbasethemes.sty)) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamer/beamerthemedefault.sty (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamer/beamerfontthemedefault.sty) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamer/beamercolorthemedefault.sty) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamer/beamerinnerthemedefault.sty
 \beamer@dima=\dimen300
 \beamer@dimb=\dimen301
-) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamer/beamerthemeMadrid.sty (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty)) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamer/beamerfontthemeprofessionalfonts.sty) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/ctex/ctex.sty (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
+) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamer/beamerouterthemedefault.sty))) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamertheme-metropolis/beamerthememetropolis.sty
+Package: beamerthememetropolis 2017/01/23 v1.2 Metropolis Beamer theme
+ (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks46
+\pgfopts@list@add@b@toks=\toks47
+) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamertheme-metropolis/beamerinnerthememetropolis.sty
+Package: beamerinnerthememetropolis 2017/01/23 Metropolis inner theme
+ (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count357
+\calc@Bcount=\count358
+\calc@Adimen=\dimen302
+\calc@Bdimen=\dimen303
+\calc@Askip=\skip67
+\calc@Bskip=\skip68
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count359
+\calc@Cskip=\skip69
+) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+Package: pgf 2025-08-14 v3.1.11 (3.1.11)
+ (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-14 v3.1.11 (3.1.11)
+\pgfnodeparttextbox=\box79
+) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-14 v3.1.11 (3.1.11)
+) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-14 v3.1.11 (3.1.11)
+\pgf@nodesepstart=\dimen304
+\pgf@nodesepend=\dimen305
+) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-14 v3.1.11 (3.1.11)
+)) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2025-08-14 v3.1.11 (3.1.11)
+\pgffor@iter=\dimen306
+\pgffor@skip=\dimen307
+\pgffor@stack=\toks48
+\pgffor@toks=\toks49
+)) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2025-08-14 v3.1.11 (3.1.11)
+ (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-14 v3.1.11 (3.1.11)
+\pgf@plot@mark@count=\count360
+\pgfplotmarksize=\dimen308
+)
+\tikz@lastx=\dimen309
+\tikz@lasty=\dimen310
+\tikz@lastxsaved=\dimen311
+\tikz@lastysaved=\dimen312
+\tikz@lastmovetox=\dimen313
+\tikz@lastmovetoy=\dimen314
+\tikzleveldistance=\dimen315
+\tikzsiblingdistance=\dimen316
+\tikz@figbox=\box80
+\tikz@figbox@bg=\box81
+\tikz@tempbox=\box82
+\tikz@tempbox@bg=\box83
+\tikztreelevel=\count361
+\tikznumberofchildren=\count362
+\tikznumberofcurrentchild=\count363
+\tikz@fig@count=\count364
+ (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-14 v3.1.11 (3.1.11)
+\pgfmatrixcurrentrow=\count365
+\pgfmatrixcurrentcolumn=\count366
+\pgf@matrix@numberofcolumns=\count367
+)
+\tikz@expandcount=\count368
+ (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-14 v3.1.11 (3.1.11)
+)))
+\metropolis@titleseparator@linewidth=\skip70
+\metropolis@progressonsectionpage=\skip71
+\metropolis@progressonsectionpage@linewidth=\skip72
+\metropolis@blocksep=\skip73
+\metropolis@blockadjust=\skip74
+\metropolis@parskip=\skip75
+) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamertheme-metropolis/beamerouterthememetropolis.sty
+Package: beamerouterthememetropolis 2017/01/23 Metropolis outer theme
+\metropolis@frametitle@padding=\skip76
+\metropolis@progressinheadfoot=\skip77
+\metropolis@progressinheadfoot@linewidth=\skip78
+) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamertheme-metropolis/beamercolorthememetropolis.sty
+Package: beamercolorthememetropolis 2017/01/23 Metropolis color theme
+) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamertheme-metropolis/beamerfontthememetropolis.sty
+Package: beamerfontthememetropolis 2017/01/23 Metropolis font theme
+ (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2025-08-13 L3 programming layer (loader) 
  (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2025-06-09 L3 backend support: XeTeX
-\g__graphics_track_int=\count357
-\g__pdfannot_backend_int=\count358
-\g__pdfannot_backend_link_int=\count359
+\g__graphics_track_int=\count369
+\g__pdfannot_backend_int=\count370
+\g__pdfannot_backend_link_int=\count371
 ))
+Package: xparse 2024-08-16 L3 Experimental document command parser
+)
+Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+ (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count372
+\l__fontspec_language_int=\count373
+\l__fontspec_strnum_int=\count374
+\l__fontspec_tmp_int=\count375
+\l__fontspec_tmpa_int=\count376
+\l__fontspec_tmpb_int=\count377
+\l__fontspec_tmpc_int=\count378
+\l__fontspec_em_int=\count379
+\l__fontspec_emdef_int=\count380
+\l__fontspec_strong_int=\count381
+\l__fontspec_strongdef_int=\count382
+\l__fontspec_tmpa_dim=\dimen317
+\l__fontspec_tmpb_dim=\dimen318
+\l__fontspec_tmpc_dim=\dimen319
+ (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
+) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+\c@fontsnotfound=\count383
+
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSansLight(0)' created for font 'Fira
+(fontspec)             Sans Light' with options
+(fontspec)             [Ligatures=TeX,ItalicFont={Fira Sans Light
+(fontspec)             Italic},BoldFont={Fira Sans},BoldItalicFont={Fira Sans
+(fontspec)             Italic}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Fira Sans
+(fontspec)             Light/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Fira Sans
+(fontspec)             Light/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Fira
+(fontspec)             Sans/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"Fira
+(fontspec)             Sans/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Fira Sans Light
+(fontspec)             Italic/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Fira Sans Light
+(fontspec)             Italic/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Fira Sans
+(fontspec)             Italic/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Fira Sans
+(fontspec)             Italic/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+
+
+
+Package beamerthememetropolis Warning: Could not find Fira Mono fonts on input line 95.
+
+)) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/beamer/beamerfontthemeprofessionalfonts.sty) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/ctex/ctex.sty
 Package: ctex 2022/07/14 v2.5.10 Chinese adapter in LaTeX (CTEX)
  (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/ctex/ctexhook.sty
 Package: ctexhook 2022/07/14 v2.5.10 Document and package hooks (CTEX)
 ) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/ctex/ctexpatch.sty
 Package: ctexpatch 2022/07/14 v2.5.10 Patching commands (CTEX)
-)
-(/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/base/fix-cm.sty
+) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
  (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
@@ -685,11 +834,11 @@ LaTeX Encoding Info:    Redeclaring text symbol \texteuro (encoding TS1) on inpu
 LaTeX Encoding Info:    Redeclaring text symbol \texttimes (encoding TS1) on input line 193.
 LaTeX Encoding Info:    Redeclaring text symbol \textdiv (encoding TS1) on input line 194.
 ))
-\l__ctex_tmp_int=\count360
-\l__ctex_tmp_box=\box79
-\l__ctex_tmp_dim=\dimen302
-\g__ctex_section_depth_int=\count361
-\g__ctex_font_size_int=\count362
+\l__ctex_tmp_int=\count384
+\l__ctex_tmp_box=\box84
+\l__ctex_tmp_dim=\dimen320
+\g__ctex_section_depth_int=\count385
+\g__ctex_font_size_int=\count386
  (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
 File: ctexopts.cfg 2022/07/14 v2.5.10 Option configuration file (CTEX)
 ) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
@@ -699,13 +848,13 @@ Package: xeCJK 2022/08/05 v3.9.1 Typesetting CJK scripts with XeLaTeX
  (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2024-08-16 L3 Experimental prototype document functions
 )
-\l__xeCJK_tmp_int=\count363
-\l__xeCJK_tmp_box=\box80
-\l__xeCJK_tmp_dim=\dimen303
-\l__xeCJK_tmp_skip=\skip67
-\g__xeCJK_space_factor_int=\count364
-\l__xeCJK_begin_int=\count365
-\l__xeCJK_end_int=\count366
+\l__xeCJK_tmp_int=\count387
+\l__xeCJK_tmp_box=\box85
+\l__xeCJK_tmp_dim=\dimen321
+\l__xeCJK_tmp_skip=\skip79
+\g__xeCJK_space_factor_int=\count388
+\l__xeCJK_begin_int=\count389
+\l__xeCJK_end_int=\count390
 \c__xeCJK_CJK_class_int=\XeTeXcharclass1
 \c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
 \c__xeCJK_FullRight_class_int=\XeTeXcharclass3
@@ -714,157 +863,174 @@ Package: xtemplate 2024-08-16 L3 Experimental prototype document functions
 \c__xeCJK_NormalSpace_class_int=\XeTeXcharclass6
 \c__xeCJK_CM_class_int=\XeTeXcharclass7
 \c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
-\l__xeCJK_last_skip=\skip68
-\c__xeCJK_none_node=\count367
-\g__xeCJK_node_int=\count368
-\c__xeCJK_CJK_node_dim=\dimen304
-\c__xeCJK_CJK-space_node_dim=\dimen305
-\c__xeCJK_default_node_dim=\dimen306
-\c__xeCJK_CJK-widow_node_dim=\dimen307
-\c__xeCJK_normalspace_node_dim=\dimen308
-\c__xeCJK_default-space_node_skip=\skip69
-\l__xeCJK_ccglue_skip=\skip70
-\l__xeCJK_ecglue_skip=\skip71
-\l__xeCJK_punct_kern_skip=\skip72
-\l__xeCJK_indent_box=\box81
-\l__xeCJK_last_penalty_int=\count369
-\l__xeCJK_last_bound_dim=\dimen309
-\l__xeCJK_last_kern_dim=\dimen310
-\l__xeCJK_widow_penalty_int=\count370
+\l__xeCJK_last_skip=\skip80
+\c__xeCJK_none_node=\count391
+\g__xeCJK_node_int=\count392
+\c__xeCJK_CJK_node_dim=\dimen322
+\c__xeCJK_CJK-space_node_dim=\dimen323
+\c__xeCJK_default_node_dim=\dimen324
+\c__xeCJK_CJK-widow_node_dim=\dimen325
+\c__xeCJK_normalspace_node_dim=\dimen326
+\c__xeCJK_default-space_node_skip=\skip81
+\l__xeCJK_ccglue_skip=\skip82
+\l__xeCJK_ecglue_skip=\skip83
+\l__xeCJK_punct_kern_skip=\skip84
+\l__xeCJK_indent_box=\box86
+\l__xeCJK_last_penalty_int=\count393
+\l__xeCJK_last_bound_dim=\dimen327
+\l__xeCJK_last_kern_dim=\dimen328
+\l__xeCJK_widow_penalty_int=\count394
 
 LaTeX template Info: Declaring template type 'xeCJK/punctuation' taking 0
 (template)           argument(s) on line 2396.
 
-\l__xeCJK_fixed_punct_width_dim=\dimen311
-\l__xeCJK_mixed_punct_width_dim=\dimen312
-\l__xeCJK_middle_punct_width_dim=\dimen313
-\l__xeCJK_fixed_margin_width_dim=\dimen314
-\l__xeCJK_mixed_margin_width_dim=\dimen315
-\l__xeCJK_middle_margin_width_dim=\dimen316
-\l__xeCJK_bound_punct_width_dim=\dimen317
-\l__xeCJK_bound_margin_width_dim=\dimen318
-\l__xeCJK_margin_minimum_dim=\dimen319
-\l__xeCJK_kerning_total_width_dim=\dimen320
-\l__xeCJK_same_align_margin_dim=\dimen321
-\l__xeCJK_different_align_margin_dim=\dimen322
-\l__xeCJK_kerning_margin_width_dim=\dimen323
-\l__xeCJK_kerning_margin_minimum_dim=\dimen324
-\l__xeCJK_bound_dim=\dimen325
-\l__xeCJK_reverse_bound_dim=\dimen326
-\l__xeCJK_margin_dim=\dimen327
-\l__xeCJK_minimum_bound_dim=\dimen328
-\l__xeCJK_kerning_margin_dim=\dimen329
-\g__xeCJK_family_int=\count371
-\l__xeCJK_fam_int=\count372
-\g__xeCJK_fam_allocation_int=\count373
-\l__xeCJK_verb_case_int=\count374
-\l__xeCJK_verb_exspace_skip=\skip73
- (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.sty (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2024-08-16 L3 Experimental document command parser
-)
-Package: fontspec 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
- (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-Package: fontspec-xetex 2024/05/11 v2.9e Font selection for XeLaTeX and LuaLaTeX
-\l__fontspec_script_int=\count375
-\l__fontspec_language_int=\count376
-\l__fontspec_strnum_int=\count377
-\l__fontspec_tmp_int=\count378
-\l__fontspec_tmpa_int=\count379
-\l__fontspec_tmpb_int=\count380
-\l__fontspec_tmpc_int=\count381
-\l__fontspec_em_int=\count382
-\l__fontspec_emdef_int=\count383
-\l__fontspec_strong_int=\count384
-\l__fontspec_strongdef_int=\count385
-\l__fontspec_tmpa_dim=\dimen330
-\l__fontspec_tmpb_dim=\dimen331
-\l__fontspec_tmpc_dim=\dimen332
- (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
-) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+\l__xeCJK_fixed_punct_width_dim=\dimen329
+\l__xeCJK_mixed_punct_width_dim=\dimen330
+\l__xeCJK_middle_punct_width_dim=\dimen331
+\l__xeCJK_fixed_margin_width_dim=\dimen332
+\l__xeCJK_mixed_margin_width_dim=\dimen333
+\l__xeCJK_middle_margin_width_dim=\dimen334
+\l__xeCJK_bound_punct_width_dim=\dimen335
+\l__xeCJK_bound_margin_width_dim=\dimen336
+\l__xeCJK_margin_minimum_dim=\dimen337
+\l__xeCJK_kerning_total_width_dim=\dimen338
+\l__xeCJK_same_align_margin_dim=\dimen339
+\l__xeCJK_different_align_margin_dim=\dimen340
+\l__xeCJK_kerning_margin_width_dim=\dimen341
+\l__xeCJK_kerning_margin_minimum_dim=\dimen342
+\l__xeCJK_bound_dim=\dimen343
+\l__xeCJK_reverse_bound_dim=\dimen344
+\l__xeCJK_margin_dim=\dimen345
+\l__xeCJK_minimum_bound_dim=\dimen346
+\l__xeCJK_kerning_margin_dim=\dimen347
+\g__xeCJK_family_int=\count395
+\l__xeCJK_fam_int=\count396
+\g__xeCJK_fam_allocation_int=\count397
+\l__xeCJK_verb_case_int=\count398
+\l__xeCJK_verb_exspace_skip=\skip85
+ (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
 File: xeCJK.cfg 2022/08/05 v3.9.1 Configuration file for xeCJK package
 ))
-\ccwd=\dimen333
-\l__ctex_ccglue_skip=\skip74
+\ccwd=\dimen348
+\l__ctex_ccglue_skip=\skip86
 )
-\l__ctex_ziju_dim=\dimen334
+\l__ctex_ziju_dim=\dimen349
  (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/zhnumber/zhnumber.sty
 Package: zhnumber 2022/07/14 v3.0 Typesetting numbers with Chinese glyphs
-\l__zhnum_scale_int=\count386
-\l__zhnum_tmp_int=\count387
+\l__zhnum_scale_int=\count399
+\l__zhnum_tmp_int=\count400
  (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
 File: zhnumber-utf8.cfg 2022/07/14 v3.0 Chinese numerals with UTF8 encoding
-)) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese.def
-File: ctex-scheme-chinese.def 2022/07/14 v2.5.10 Chinese scheme for generic (CTEX)
- (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
-File: ctex-name-utf8.cfg 2022/07/14 v2.5.10 Caption with encoding UTF-8 (CTEX)
-)) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-fandol.def
-File: ctex-fontset-fandol.def 2022/07/14 v2.5.10 Fandol fonts definition (CTEX)
+)) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-plain.def
+File: ctex-scheme-plain.def 2022/07/14 v2.5.10 Plain scheme for generic (CTEX)
+)) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/ctex/config/ctex.cfg
+File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
+)
 
 Package fontspec Info: 
-(fontspec)             Script 'CJK' not explicitly supported within font
-(fontspec)             'FandolSong-Regular'. Check the typeset output, and if
-(fontspec)             it is okay then ignore this warning. Otherwise a
-(fontspec)             different font should be chosen.
+(fontspec)             Could not resolve font "Source Han Serif CN Bold/I" (it
+(fontspec)             probably doesn't exist).
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'FandolSong-Regular(0)' created for font
-(fontspec)             'FandolSong-Regular' with options
-(fontspec)             [Script={CJK},Extension={.otf},BoldFont={FandolSong-Bold},ItalicFont={FandolKai-Regular}].
+(fontspec)             Could not resolve font "Source Han Serif CN/I" (it
+(fontspec)             probably doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'SourceHanSerifCN(0)' created for font
+(fontspec)             'Source Han Serif CN' with options
+(fontspec)             [Script={CJK},BoldFont={Source Han Serif CN Bold}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[FandolSong-Regular.otf]/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"[FandolSong-Bold.otf]/OT:script=hani;language=dflt;"
-(fontspec)             - 'italic' (m/it) with NFSS spec.:
-(fontspec)             <->"[FandolKai-Regular.otf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Source Han Serif
+(fontspec)             CN/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Source Han Serif CN
+(fontspec)             Bold/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Source Han
+(fontspec)             Serif CN/BI/OT:script=hani;language=dflt;"
 
-)) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/ctex/config/ctex.cfg
-File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
-)
-Package hyperref Info: Option `unicode' set `true' on input line 32.
- (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
+Package hyperref Info: Option `unicode' set `true' on input line 21.
+ (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
+\LTleft=\skip87
+\LTright=\skip88
+\LTpre=\skip89
+\LTpost=\skip90
+\LTchunksize=\count401
+\LTcapwidth=\dimen350
+\LT@head=\box87
+\LT@firsthead=\box88
+\LT@foot=\box89
+\LT@lastfoot=\box90
+\LT@gbox=\box91
+\LT@cols=\count402
+\LT@rows=\count403
+\c@LT@tables=\count404
+\c@LT@chunks=\count405
+\LT@p@ftn=\toks50
+) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen351
+\lightrulewidth=\dimen352
+\cmidrulewidth=\dimen353
+\belowrulesep=\dimen354
+\belowbottomsep=\dimen355
+\aboverulesep=\dimen356
+\abovetopsep=\dimen357
+\cmidrulesep=\dimen358
+\cmidrulekern=\dimen359
+\defaultaddspace=\dimen360
+\@cmidla=\count406
+\@cmidlb=\count407
+\@aboverulesep=\dimen361
+\@belowrulesep=\dimen362
+\@thisruleclass=\count408
+\@lastruleclass=\count409
+\@thisrulewidth=\dimen363
+) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen335
-\captionmargin=\dimen336
-\caption@leftmargin=\dimen337
-\caption@rightmargin=\dimen338
-\caption@width=\dimen339
-\caption@indent=\dimen340
-\caption@parindent=\dimen341
-\caption@hangindent=\dimen342
+\caption@tempdima=\dimen364
+\captionmargin=\dimen365
+\caption@leftmargin=\dimen366
+\caption@rightmargin=\dimen367
+\caption@width=\dimen368
+\caption@indent=\dimen369
+\caption@parindent=\dimen370
+\caption@hangindent=\dimen371
 Package caption Info: beamer document class detected.
  (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/caption/caption-beamer.sto
 File: caption-beamer.sto 2022/01/06 v2.0c Adaption of the caption package to the beamer document classes (AR)
 ))
-\c@caption@flags=\count388
-\c@continuedfloat=\count389
+\c@caption@flags=\count410
+\c@continuedfloat=\count411
 Package caption Info: hyperref package is loaded.
 Package caption Info: Hyperref support is turned off
 (caption)             because hyperref has stopped early.
-) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
+Package caption Info: longtable package is loaded.
+ (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
 Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count390
+\c@subfigure=\count412
 Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count391
+\c@subtable=\count413
 ) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count392
-\float@exts=\toks46
-\float@box=\box82
-\@float@everytoks=\toks47
-\@floatcapt=\box83
-)
-(/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/svg/svg.sty
+\c@float@type=\count414
+\float@exts=\toks51
+\float@box=\box92
+\@float@everytoks=\toks52
+\@floatcapt=\box93
+) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/svg/svg.sty
 Package: svg 2020/11/26 v2.02k (include SVG pictures)
- (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/koma-script/scrbase.sty
+
+(/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/koma-script/scrbase.sty
 Package: scrbase 2025/08/19 v3.46 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
 Applying: [2021/05/01] Usage of raw or classic option list on input line 254.
 Already applied: [0000/00/00] Usage of raw or classic option list on input line 370.
@@ -874,9 +1040,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 Package: shellesc 2023/07/08 v1.0d unified shell escape interface for LaTeX
 Package shellesc Info: Restricted shell escape enabled on input line 77.
 )
-\c@svg@param@lastpage=\count393
-\svg@box=\box84
-\c@svg@param@currpage=\count394
+\c@svg@param@lastpage=\count415
+\svg@box=\box94
+\c@svg@param@currpage=\count416
 ) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/transparent/transparent.sty
 Package: transparent 2025-06-23 v1.6 Transparency with color stacks
  (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/transparent/transparent-nometadata.sty
@@ -885,82 +1051,68 @@ Package: transparent-nometadata 2025-06-23 v1.6 Transparency via pdfTeX's color 
 
 Package transparent Warning: Loading aborted, because pdfTeX is not running in PDF mode.
 
-)) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen343
-\lightrulewidth=\dimen344
-\cmidrulewidth=\dimen345
-\belowrulesep=\dimen346
-\belowbottomsep=\dimen347
-\aboverulesep=\dimen348
-\abovetopsep=\dimen349
-\cmidrulesep=\dimen350
-\cmidrulekern=\dimen351
-\defaultaddspace=\dimen352
-\@cmidla=\count395
-\@cmidlb=\count396
-\@aboverulesep=\dimen353
-\@belowrulesep=\dimen354
-\@thisruleclass=\count397
-\@lastruleclass=\count398
-\@thisrulewidth=\dimen355
-) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/tools/array.sty
+)) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/tools/array.sty
 Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
-\col@sep=\dimen356
-\ar@mcellbox=\box85
-\extrarowheight=\dimen357
-\NC@list=\toks48
-\extratabsurround=\skip75
-\backup@length=\skip76
-\ar@cellbox=\box86
+\col@sep=\dimen372
+\ar@mcellbox=\box95
+\extrarowheight=\dimen373
+\NC@list=\toks53
+\extratabsurround=\skip91
+\backup@length=\skip92
+\ar@cellbox=\box96
 ) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/threeparttable/threeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box87
+\@tempboxb=\box97
 )
 
 Package fontspec Info: 
-(fontspec)             Script 'CJK' not explicitly supported within font
-(fontspec)             'FandolHei-Regular'. Check the typeset output, and if
-(fontspec)             it is okay then ignore this warning. Otherwise a
-(fontspec)             different font should be chosen.
+(fontspec)             Could not resolve font "Source Han Sans CN Bold/I" (it
+(fontspec)             probably doesn't exist).
 
 
 Package fontspec Info: 
-(fontspec)             Font family 'FandolHei-Regular(0)' created for font
-(fontspec)             'FandolHei-Regular' with options
-(fontspec)             [Script={CJK},Extension={.otf},BoldFont={FandolHei-Bold}].
+(fontspec)             Could not resolve font "Source Han Sans CN/I" (it
+(fontspec)             probably doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'SourceHanSansCN(0)' created for font
+(fontspec)             'Source Han Sans CN' with options
+(fontspec)             [Script={CJK},BoldFont={Source Han Sans CN Bold}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[FandolHei-Regular.otf]/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.:
-(fontspec)             <->"[FandolHei-Bold.otf]/OT:script=hani;language=dflt;"
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Source Han Sans
+(fontspec)             CN/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Source Han Sans CN
+(fontspec)             Bold/OT:script=hani;language=dflt;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Source Han
+(fontspec)             Sans CN/BI/OT:script=hani;language=dflt;"
 
  (./presentation_beamer_fixed2.aux)
 \openout1 = `presentation_beamer_fixed2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -970,14 +1122,14 @@ LaTeX Font Info:    ... okay on input line 109.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(10.95pt, 433.34409pt, 10.95pt)
+* h-part:(L,W,R)=(28.45274pt, 398.3386pt, 28.45274pt)
 * v-part:(T,H,B)=(0.0pt, 256.0748pt, 0.0pt)
 * \paperwidth=455.24408pt
 * \paperheight=256.0748pt
-* \textwidth=433.34409pt
+* \textwidth=398.3386pt
 * \textheight=227.62207pt
-* \oddsidemargin=-61.31999pt
-* \evensidemargin=-61.31999pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
@@ -996,7 +1148,7 @@ LaTeX Font Info:    ... okay on input line 109.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 109.
+Package hyperref Info: Link coloring OFF on input line 52.
 (./presentation_beamer_fixed2.out) (./presentation_beamer_fixed2.out)
 \@outlinefile=\write5
 \openout5 = `presentation_beamer_fixed2.out'.
@@ -1013,637 +1165,221 @@ Dictionary: translator-months-dictionary, Language: English
 Dictionary: translator-numbers-dictionary, Language: English 
 ) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/translator/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/ctex/dictionary/translator-theorem-dictionary-ChineseUTF8.dict
-Dictionary: translator-theorem-dictionary, Language: ChineseUTF8 2022/07/14 v2.5.10 Chinese translation for theorem name (CTEX)
 )
-
-Package fontspec Info: 
-(fontspec)             Adjusting the maths setup (use [no-math] to avoid
-(fontspec)             this).
-
-\symlegacymaths=\mathgroup6
-LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 109.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 109.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 109.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 109.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 109.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 109.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 109.
-LaTeX Font Info:    Redeclaring math accent \check on input line 109.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 109.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 109.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 109.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 109.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 109.
-LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 109.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 109.
-LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 109.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 109.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 109.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 109.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 109.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 109.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 109.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 109.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 109.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 109.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 109.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (./presentation_beamer_fixed2.nav)
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 109--109
- [][][][]  
+Overfull \vbox (47.92595pt too high) detected at line 56
  []
 
 
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 113--113
- [][][][]  
- []
-
-
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
 
 [1
 
 ]
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 143--143
- [][][][]  
- []
-
-
 
 [2
 
 ]
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 149--149
- [][][][]  
- []
-
-\openout4 = `presentation_beamer_fixed2.vrb'.
-
-
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 161--161
- [][][][]  
- []
-
-(./presentation_beamer_fixed2.vrb)
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
 
 [3
 
+
 ]
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 165--165
- [][][][]  
- []
-
-\openout4 = `presentation_beamer_fixed2.vrb'.
-
-
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 175--175
- [][][][]  
- []
-
-(./presentation_beamer_fixed2.vrb
-LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 88.
  (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 88.
  (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
+)
 
 [4
 
 ]
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 179--179
- [][][][]  
- []
-
 \openout4 = `presentation_beamer_fixed2.vrb'.
 
-
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 201--201
- [][][][]  
- []
-
-(./presentation_beamer_fixed2.vrb)
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
+ (./presentation_beamer_fixed2.vrb)
 
 [5
 
 ]
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 205--205
- [][][][]  
- []
-
 \openout4 = `presentation_beamer_fixed2.vrb'.
 
-
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 737--737
- [][][][]  
- []
-
-(./presentation_beamer_fixed2.vrb
-
-Package fontspec Info: 
-(fontspec)             Script 'CJK' not explicitly supported within font
-(fontspec)             'FandolFang-Regular'. Check the typeset output, and if
-(fontspec)             it is okay then ignore this warning. Otherwise a
-(fontspec)             different font should be chosen.
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'FandolFang-Regular(0)' created for font
-(fontspec)             'FandolFang-Regular' with options
-(fontspec)             [Script={CJK},Extension={.otf}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <->"[FandolFang-Regular.otf]/OT:script=hani;language=dflt;"
-
-File: images_in_paper/model.png Graphic file (type bmp)
-<images_in_paper/model.png>
-File: images_in_paper/acc_train_val.png Graphic file (type bmp)
-<images_in_paper/acc_train_val.png>
-File: images_in_paper/loss_train_val.png Graphic file (type bmp)
-<images_in_paper/loss_train_val.png>
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 337.
-
-
-LaTeX Font Warning: Font shape `TU/FandolHei-Regular(0)/m/it' undefined
-(Font)              using `TU/FandolHei-Regular(0)/m/n' instead on input line 389.
-
-File: images_in_paper/embed_time_tsne.png Graphic file (type bmp)
-<images_in_paper/embed_time_tsne.png>
-File: images_in_paper/embed_time_pca.png Graphic file (type bmp)
-<images_in_paper/embed_time_pca.png>
-File: images_in_paper/embed_formant_tsne.png Graphic file (type bmp)
-<images_in_paper/embed_formant_tsne.png>
-File: images_in_paper/embed_formant_pca.png Graphic file (type bmp)
-<images_in_paper/embed_formant_pca.png>
-File: images_in_paper/contrib_means_by_class.png Graphic file (type bmp)
-<images_in_paper/contrib_means_by_class.png>
-File: images_in_paper/contrib_correlation.png Graphic file (type bmp)
-<images_in_paper/contrib_correlation.png>
-File: images_in_paper/contrib_violin_all.png Graphic file (type bmp)
-<images_in_paper/contrib_violin_all.png>
-File: images_in_paper/roc_time.png Graphic file (type bmp)
-<images_in_paper/roc_time.png>
-File: images_in_paper/roc_formant.png Graphic file (type bmp)
-<images_in_paper/roc_formant.png>
-File: images_in_paper/branch_metrics_auc_acc.png Graphic file (type bmp)
-<images_in_paper/branch_metrics_auc_acc.png>
-File: images_in_paper/branch_fisher.png Graphic file (type bmp)
-<images_in_paper/branch_fisher.png>
-)
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
+ (./presentation_beamer_fixed2.vrb)
 
 [6
 
 ]
+\openout4 = `presentation_beamer_fixed2.vrb'.
 
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
+ (./presentation_beamer_fixed2.vrb)
 
 [7
 
-
 ]
+\openout4 = `presentation_beamer_fixed2.vrb'.
 
+ (./presentation_beamer_fixed2.vrb
 
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
+Package fontspec Info: 
+(fontspec)             Font family 'FiraSansLight(1)' created for font 'Fira
+(fontspec)             Sans Light' with options
+(fontspec)             [Ligatures=TeX,ItalicFont={Fira Sans Light
+(fontspec)             Italic},BoldFont={Fira Sans},BoldItalicFont={Fira Sans
+(fontspec)             Italic},Numbers={Monospaced}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Fira Sans
+(fontspec)             Light/OT:script=latn;language=dflt;+tnum;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Fira Sans
+(fontspec)             Light/OT:script=latn;language=dflt;+tnum;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Fira
+(fontspec)             Sans/OT:script=latn;language=dflt;+tnum;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"Fira
+(fontspec)             Sans/OT:script=latn;language=dflt;+tnum;+smcp;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Fira Sans Light
+(fontspec)             Italic/OT:script=latn;language=dflt;+tnum;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Fira Sans Light
+(fontspec)             Italic/OT:script=latn;language=dflt;+tnum;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Fira Sans
+(fontspec)             Italic/OT:script=latn;language=dflt;+tnum;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Fira Sans
+(fontspec)             Italic/OT:script=latn;language=dflt;+tnum;+smcp;mapping=tex-text;"
+
+)
 
 [8
 
-
 ]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
+Overfull \vbox (36.00215pt too high) detected at line 144
  []
+
+
 
 [9
 
 
 ]
+\openout4 = `presentation_beamer_fixed2.vrb'.
 
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
+ (./presentation_beamer_fixed2.vrb
+File: images_in_paper/model.png Graphic file (type bmp)
+<images_in_paper/model.png>
+)
 
 [10
 
-
 ]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
 
 [11
 
 
 ]
+\openout4 = `presentation_beamer_fixed2.vrb'.
 
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
+ (./presentation_beamer_fixed2.vrb)
 
 [12
 
-
 ]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
 
 [13
 
 
 ]
+File: images_in_paper/acc_train_val.png Graphic file (type bmp)
+<images_in_paper/acc_train_val.png>
+File: images_in_paper/loss_train_val.png Graphic file (type bmp)
+<images_in_paper/loss_train_val.png>
 
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
+Overfull \vbox (11.77298pt too high) detected at line 205
  []
+
+
 
 [14
 
-
 ]
+\openout4 = `presentation_beamer_fixed2.vrb'.
 
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
+ (./presentation_beamer_fixed2.vrb)
 
 [15
 
-
 ]
+\openout4 = `presentation_beamer_fixed2.vrb'.
 
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
+ (./presentation_beamer_fixed2.vrb)
 
 [16
 
-
 ]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
 
 [17
 
-
 ]
-Overfull \vbox (35.76155pt too high) detected at line 737
- []
+\openout4 = `presentation_beamer_fixed2.vrb'.
 
-
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
+ (./presentation_beamer_fixed2.vrb)
 
 [18
 
-
 ]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
 
 [19
 
 
 ]
 
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
 [20
-
 
 ]
 
+Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
+(xeCJK)                
+(xeCJK)                Try to use `\setCJKmonofont[<...>]{<...>}' to define
+(xeCJK)                it.
 
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
+
 
 [21
 
-
 ]
-Overfull \vbox (9.5269pt too high) detected at line 737
- []
+\openout4 = `presentation_beamer_fixed2.vrb'.
 
-
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
+ (./presentation_beamer_fixed2.vrb)
 
 [22
 
-
 ]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
 
 [23
 
-
 ]
+\openout4 = `presentation_beamer_fixed2.vrb'.
 
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
+ (./presentation_beamer_fixed2.vrb)
 
 [24
 
-
 ]
-Overfull \vbox (1.90454pt too high) detected at line 737
- []
+\openout4 = `presentation_beamer_fixed2.vrb'.
 
-
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
+ (./presentation_beamer_fixed2.vrb)
 
 [25
 
-
 ]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
 
 [26
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[27
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[28
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[29
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[30
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[31
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[32
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[33
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[34
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[35
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[36
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[37
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[38
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[39
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[40
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[41
-
-
-]
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 741--741
- [][][][]  
- []
-
-\openout4 = `presentation_beamer_fixed2.vrb'.
-
-
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 753--753
- [][][][]  
- []
-
-(./presentation_beamer_fixed2.vrb)
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[42
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[43
-
 
 ]
 \tf@nav=\write6
@@ -1660,20 +1396,16 @@ Overfull \hbox (1.84229pt too wide) has occurred while \output is active
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
 Package rerunfilecheck Info: File `presentation_beamer_fixed2.out' has not changed.
-(rerunfilecheck)             Checksum: B4025329B5CC769D0709D8E04C0E899B;1184.
+(rerunfilecheck)             Checksum: 8ACCD1D2E144D8E2BBFBB6D033A5E978;940.
  ) 
 Here is how much of TeX's memory you used:
- 29978 strings out of 468441
- 684619 string characters out of 5439576
- 1183925 words of memory out of 5000000
- 57794 multiletter control sequences out of 15000+600000
- 633956 words of font info for 104 fonts, out of 8000000 for 9000
+ 33228 strings out of 468441
+ 762264 string characters out of 5439576
+ 1138393 words of memory out of 5000000
+ 60971 multiletter control sequences out of 15000+600000
+ 635048 words of font info for 121 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 128i,15n,123p,555b,895s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,13n,142p,1893b,788s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on presentation_beamer_fixed2.xdv (43 pages, 686600 bytes).
+Output written on presentation_beamer_fixed2.xdv (26 pages, 122660 bytes).
