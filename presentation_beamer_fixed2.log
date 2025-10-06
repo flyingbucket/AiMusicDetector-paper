@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.29)  5 OCT 2025 11:39
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.30)  6 OCT 2025 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1215,6 +1215,16 @@ File: ctex.cfg 2022/07/14 v2.5.10 Configuration file (CTEX)
 )
 
 Package fontspec Info: 
+(fontspec)             Could not resolve font "Noto Sans CJK SC/BI" (it
+(fontspec)             probably doesn't exist).
+
+
+Package fontspec Info: 
+(fontspec)             Could not resolve font "Noto Sans CJK SC/B" (it
+(fontspec)             probably doesn't exist).
+
+
+Package fontspec Info: 
 (fontspec)             Could not resolve font "Noto Sans CJK SC/I" (it
 (fontspec)             probably doesn't exist).
 
@@ -1228,10 +1238,6 @@ Package fontspec Info:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Noto Sans CJK
 (fontspec)             SC/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Noto Sans CJK
-(fontspec)             SC/B/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Noto Sans
-(fontspec)             CJK SC/BI/OT:script=hani;language=dflt;"
 
 
 (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
@@ -1355,7 +1361,8 @@ Package: array 2025/06/08 v2.6j Tabular extension package (FMi)
 parttable.sty
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box87
-) (./presentation_beamer_fixed2.aux)
+)
+No file presentation_beamer_fixed2.aux.
 \openout1 = `presentation_beamer_fixed2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
@@ -1378,7 +1385,6 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
 LaTeX Font Info:    ... okay on input line 49.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
 LaTeX Font Info:    ... okay on input line 49.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1414,6 +1420,9 @@ LaTeX Font Info:    ... okay on input line 49.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Link coloring OFF on input line 49.
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 
 (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/translator/translato
 r-basic-dictionary-English.dict
@@ -1506,7 +1515,7 @@ Overfull \hbox (1.84229pt too wide) in paragraph at lines 49--49
  []
 
 
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 87--87
+Overfull \hbox (1.84229pt too wide) in paragraph at lines 53--53
  [][][][]  
  []
 
@@ -1520,659 +1529,68 @@ Overfull \hbox (1.84229pt too wide) has occurred while \output is active
 [1
 
 ]
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 114--114
+Overfull \hbox (1.84229pt too wide) in paragraph at lines 83--83
  [][][][]  
  []
+
+! Undefined control sequence.
+<inserted text> ...ract} 针对AI音频的识别问题，本文提出一种基于\tef 
+                                                  {多分支卷积神经网络（Multi-Branch CN...
+l.83 \end{frame}
+                
+? 
+! Undefined control sequence.
+<inserted text> ...端到端 AI 音频检测与评分模型。 \par 从\texbf 
+                                                  {时域、频域及声学常见统计量}等多角度提取 11 类...
+l.83 \end{frame}
+                
+? 
+! Undefined control sequence.
+<inserted text> ...建模后融合判别。 针对单分支贡献的量化问题，引入\texbf 
+                                                  {分支探针}机制， 基于各分支独立判别准确率确定加权...
+l.83 \end{frame}
+                
+? 
+
+LaTeX Font Warning: Font shape `TU/NotoSansCJKSC(0)/b/n' undefined
+(Font)              using `TU/NotoSansCJKSC(0)/m/n' instead on input line 83.
 
 
 
 [2
 
 ]
+Overfull \hbox (1.84229pt too wide) in paragraph at lines 89--89
+ [][][][]  
+ []
+
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+
+Overfull \hbox (1.84229pt too wide) in paragraph at lines 101--101
+ [][][][]  
+ []
+
+(./presentation_beamer_fixed2.vrb)
+
+
+Overfull \hbox (1.84229pt too wide) has occurred while \output is active
+ [][][][]  
+ []
 
 [3
 
-
 ]
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 119--119
+Overfull \hbox (1.84229pt too wide) in paragraph at lines 105--105
  [][][][]  
  []
 
 \openout4 = `presentation_beamer_fixed2.vrb'.
 
 
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 138--138
- [][][][]  
- []
-
-(./presentation_beamer_fixed2.vrb)
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[4
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[5
-
-
-]
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 142--142
- [][][][]  
- []
-
-\openout4 = `presentation_beamer_fixed2.vrb'.
-
-
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 154--154
- [][][][]  
- []
-
-(./presentation_beamer_fixed2.vrb)
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[6
-
-]
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 158--158
- [][][][]  
- []
-
-\openout4 = `presentation_beamer_fixed2.vrb'.
-
-
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 168--168
+Overfull \hbox (1.84229pt too wide) in paragraph at lines 115--115
  [][][][]  
  []
 
 (./presentation_beamer_fixed2.vrb
-LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
-
-(/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
-
-(/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[7
-
-]
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 172--172
- [][][][]  
- []
-
-\openout4 = `presentation_beamer_fixed2.vrb'.
-
-
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 194--194
- [][][][]  
- []
-
-(./presentation_beamer_fixed2.vrb)
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[8
-
-]
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 198--198
- [][][][]  
- []
-
-\openout4 = `presentation_beamer_fixed2.vrb'.
-
-
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 730--730
- [][][][]  
- []
-
-(./presentation_beamer_fixed2.vrb
-
-Package fontspec Info: 
-(fontspec)             Could not resolve font "Noto Sans Mono CJK SC/I" (it
-(fontspec)             probably doesn't exist).
-
-
-Package fontspec Info: 
-(fontspec)             Font family 'NotoSansMonoCJKSC(0)' created for font
-(fontspec)             'Noto Sans Mono CJK SC' with options [Script={CJK}].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Noto Sans Mono
-(fontspec)             CJK SC/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Noto Sans Mono CJK
-(fontspec)             SC/B/OT:script=hani;language=dflt;"
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Noto Sans
-(fontspec)             Mono CJK SC/BI/OT:script=hani;language=dflt;"
-
-File: images_in_paper/model.png Graphic file (type bmp)
-<images_in_paper/model.png>
-File: images_in_paper/acc_train_val.png Graphic file (type bmp)
-<images_in_paper/acc_train_val.png>
-File: images_in_paper/loss_train_val.png Graphic file (type bmp)
-<images_in_paper/loss_train_val.png>
-
-! Undefined control sequence.
-l.248 \paragraph
-                {权重确定} 设各分支探针在独立判别（AI/非AI）下的准确率
-? 
-! Undefined control sequence.
-l.282 \paragraph
-                {评分规则} 记各分支探针头给出的“为AI生成”的概率为
-? 
-! Undefined control sequence.
-l.292 \paragraph
-                {探针准确率与权重} 表~\ref{tab:probe-acc-weight} 汇总了主分类器与各分支探针的独立准确率以...
-
-? 
-! Undefined control sequence.
-l.313 \paragraph
-                {分析讨论}\par
-? 
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 337.
-! Undefined control sequence.
-l.388 \paragraph
-                {（1）区域可分性：时域分支更“可分”，formant 分支更“缠绕”。}
-? 
-
-LaTeX Font Warning: Font shape `TU/NotoSansCJKSC(0)/m/it' undefined
-(Font)              using `TU/NotoSansCJKSC(0)/m/n' instead on input line 389.
-
-File: images_in_paper/embed_time_tsne.png Graphic file (type bmp)
-<images_in_paper/embed_time_tsne.png>
-File: images_in_paper/embed_time_pca.png Graphic file (type bmp)
-<images_in_paper/embed_time_pca.png>
-File: images_in_paper/embed_formant_tsne.png Graphic file (type bmp)
-<images_in_paper/embed_formant_tsne.png>
-File: images_in_paper/embed_formant_pca.png Graphic file (type bmp)
-<images_in_paper/embed_formant_pca.png>
-! Undefined control sequence.
-l.413 \paragraph
-                {（2）量化分析：有针对性的微扰能显著改变判别。}
-? 
-File: images_in_paper/contrib_means_by_class.png Graphic file (type bmp)
-<images_in_paper/contrib_means_by_class.png>
-File: images_in_paper/contrib_correlation.png Graphic file (type bmp)
-<images_in_paper/contrib_correlation.png>
-File: images_in_paper/contrib_violin_all.png Graphic file (type bmp)
-<images_in_paper/contrib_violin_all.png>
-File: images_in_paper/roc_time.png Graphic file (type bmp)
-<images_in_paper/roc_time.png>
-File: images_in_paper/roc_formant.png Graphic file (type bmp)
-<images_in_paper/roc_formant.png>
-File: images_in_paper/branch_metrics_auc_acc.png Graphic file (type bmp)
-<images_in_paper/branch_metrics_auc_acc.png>
-File: images_in_paper/branch_fisher.png Graphic file (type bmp)
-<images_in_paper/branch_fisher.png>
-! Undefined control sequence.
-l.524 \paragraph
-                {（3）偏差与失败模式。}
-? 
-)
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[9
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[10
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[11
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[12
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[13
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[14
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[15
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[16
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[17
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[18
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[19
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[20
-
-
-]
-Overfull \vbox (7.05759pt too high) detected at line 730
- []
-
-
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[21
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[22
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[23
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[24
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[25
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[26
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[27
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[28
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[29
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[30
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[31
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[32
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[33
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[34
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[35
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[36
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[37
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[38
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[39
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[40
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[41
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[42
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[43
-
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[44
-
-
-]
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 734--734
- [][][][]  
- []
-
-\openout4 = `presentation_beamer_fixed2.vrb'.
-
-
-Overfull \hbox (1.84229pt too wide) in paragraph at lines 746--746
- [][][][]  
- []
-
-(./presentation_beamer_fixed2.vrb
-! Undefined control sequence.
-l.3 \paragraph
-              {模型优点}
-? 
-! Undefined control sequence.
-l.6 \paragraph
-              {模型不足}
-? 
-! Undefined control sequence.
-l.9 \paragraph
-              {模型推广}
-? 
-)
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 746.
-
-
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[45
-
-]
-
-
-Overfull \hbox (1.84229pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[46
-
-
-]
-\tf@nav=\write5
-\openout5 = `presentation_beamer_fixed2.nav'.
-
-\tf@toc=\write6
-\openout6 = `presentation_beamer_fixed2.toc'.
-
-\tf@snm=\write7
-\openout7 = `presentation_beamer_fixed2.snm'.
-
- (./presentation_beamer_fixed2.aux)
- ***********
-LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2022/07/14>
- ***********
-
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
- ) 
-Here is how much of TeX's memory you used:
- 30041 strings out of 468441
- 678339 string characters out of 5439576
- 1181958 words of memory out of 5000000
- 57863 multiletter control sequences out of 15000+600000
- 633398 words of font info for 102 fonts, out of 8000000 for 9000
- 1348 hyphenation exceptions out of 8191
- 128i,15n,123p,551b,897s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-Output written on presentation_beamer_fixed2.pdf (46 pages).
+LaTeX Font Info:    Trying to load font informat
