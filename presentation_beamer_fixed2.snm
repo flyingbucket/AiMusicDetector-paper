@@ -10,3 +10,12 @@
 \beamer@slide {eq:ai_score}{22}
 \beamer@slide {eq:branch_weight}{23}
 \beamer@slide {tab:probe-acc-weight}{24}
+\beamer@slide {tab:family-stats}{30}
+\beamer@slide {fig:time_tsne_pca}{35}
+\beamer@slide {fig:formant_embed}{37}
+\beamer@slide {fig:contrib_means}{41}
+\beamer@slide {fig:contrib_means_by_class}{45}
+\beamer@slide {fig:contrib_corr}{45}
+\beamer@slide {fig:contrib_violin}{46}
+\beamer@slide {fig:roc}{48}
+\beamer@slide {fig:branch_metrics}{49}

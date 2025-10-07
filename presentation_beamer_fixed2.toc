@@ -8,3 +8,7 @@
 \beamer@sectionintoc {2}{评分机制}{20}{0}{2}
 \beamer@subsectionintoc {2}{1}{定义评分公式}{21}{0}{2}
 \beamer@subsectionintoc {2}{2}{结果与分析}{25}{0}{2}
+\beamer@sectionintoc {3}{鲁棒性分析}{26}{0}{3}
+\beamer@subsectionintoc {3}{1}{扰动构造}{28}{0}{3}
+\beamer@subsectionintoc {3}{2}{实验方案}{29}{0}{3}
+\beamer@subsectionintoc {3}{3}{归因分析：分支数据流与扰动敏感性的关联}{34}{0}{3}

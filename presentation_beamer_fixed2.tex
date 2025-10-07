@@ -369,234 +369,527 @@ hjorth（Hjorth）    & 0.7718 & 0.1982 \\
 
 
 
-% \subsection{问题3模型建立与求解}
+\section{鲁棒性分析}
+\begin{frame}[fragile,allowframebreaks]{鲁棒性分析}
+  \begin{itemize}
+    \item 构造扰动
+    \item 分析扰动实验结果
+    \item 结合\textbf{数据流}进行归因分析
+  \end{itemize}
+\end{frame}
+
+\subsection{扰动构造}
+\begin{frame}[fragile,allowframebreaks]{扰动构造}
+从模型和数据两个角度入手，构造扰动：
+\begin{enumerate}
+\item \textbf{模型角度：}修改音频，对模型采用的是一个特征进行直接干扰
+  \begin{itemize}
+    \item \textbf{时域分支：} 轻度动态压缩、滤波器、相位扰动；
+    \item \textbf{频域分支：} EQ频段调节；
+    \item \textbf{类共振峰分支：} 对常见人声频段进行增益/衰减；
+    \item \textbf{全局统计分支：} 局部加速/减速，改变节奏特征；
+    \item \textbf{音高与谐噪比分支：} 对音高作 $\pm 0.15$ semitone 平移，加入低幅白噪声。
+  \end{itemize}
+
+\item \textbf{数据角度：}音轨合并扰动\\
+  将原始音频与自然环境噪声片段（如 \emph{city park, forest, rain}）按不同响度比例混合，构造更具真实感的样本。
+\end{enumerate}
+
+\end{frame}
+
+\subsection{实验方案}
+\begin{frame}[fragile,allowframebreaks]{扰动实验结果及分析}
+
+对真实标签为"AI生成"的音频施加前述两类扰动，构造测试集，分别计算：
+\[
+S = \text{加权融合评分}, \quad \texttt{prob\_main} = \text{主分类概率}
+\]
+  每类扰动设置 \texttt{mild}、\texttt{medium}、\texttt{strong} 三档强度，
+  并统一归一化 RMS 以消除响度影响。
+\end{frame}
+
+% \begin{frame}[fragile,allowframebreaks]{扰动实验结果及分析}
 %
-% 第三问的目标是在尽量不影响可听性的前提下，通过对目标音频进行人为扰动和对抗性处理，考察模型检测AI音频的稳定性，并基于分析提出可操作的改进方案，使得模型在实际复杂场景中保持较高准确度与可解释性。为此，我们可以设计以下流程：扰动构造、鲁棒性分析、归因分析、改进方向。
+% \textbf{分析流程：}
 %
+% \begin{enumerate}
+%   \item \textbf{扰动集划分：}
+%   \begin{itemize}
+%     \item 细粒度特征通道扰动：包括 RMS/相位扰动、倾斜式 EQ、窄带峰值 EQ、共振峰微调、节奏微变、音高与谐噪比调整；
+%     \item 频率域参数均衡器扰动：多组中心频率、增益与品质因数组合的窄带或宽带 \emph{peaking} EQ；
+%     \item 音轨合并扰动：与环境音（城市、公园、雨声）按不同比例混合。
+%   \end{itemize}
+%   每类扰动设置 \texttt{mild}、\texttt{medium}、\texttt{strong} 三档强度，
+%   并统一归一化 RMS 以消除响度影响。
 %
-% \subsubsection{扰动构造}
-% 为了研究检测模型在微小音频变动下的鲁棒性，我们设计了三类扰动方法。
-% 第一类基于多分支特征通道的细粒度信号处理，包括：
-% (i)~\textbf{时域分支}：使用轻度动态压缩器（RMS 检测+软拐点曲线）配合一阶全通滤波引入非线性相位扰动；
-% (ii)~\textbf{频域分支}：施加倾斜式均衡（spectral tilt）以及窄带峰值 EQ，以在高/低频端产生微小幅度变化；
-% (iii)~\textbf{类共振峰分支}：在 700\,Hz、1500\,Hz 等人声相关频段执行峰值增益/衰减，模拟共振峰位置的轻微漂移；
-% (iv)~\textbf{全局统计分支}：通过微小的时间伸缩改变节奏分布；
-% (v)~\textbf{音高/谐噪比分支}：对音高作 $\pm 0.15$~semitone 的平移并加入低幅白噪声降低 HNR。
-% 上述扰动均设定了 \texttt{mild}、\texttt{medium}、\texttt{strong} 三档强度，并在处理后统一归一化至目标 RMS。
-%
-% 第二类为频率域参数均衡器扰动。我们预先设定若干组窄带或宽带 \emph{peaking} EQ 参数（中心频率 $f_0$、增益 $G$、品质因数 $Q$），
-% 例如 $(f_0=12\,\text{kHz}, G=+1.5\,\text{dB}, Q=4.0)$、$(f_0=150\,\text{Hz}, G=-1.0\,\text{dB}, Q=1.0)$ 等，
-% 并利用 RBJ~cookbook~公式设计二阶 IIR 滤波器逐通道施加。
-% 所有增益幅度控制在 $\pm 2$\,dB 内，以保证主观听感基本不变，但在频谱结构和特征空间中引入可测差异。
-%
-%
-% 第三类是音轨合并扰动，我们寻找了常见的白噪音音乐片段（city park、forest、rain)与原始音频按照不同的响度比例合并以构造更具自然色彩的音频。
-%
-%
-%
-% \subsubsection{鲁棒性分析}
-% 为评估所提出多分支 CNN 检测模型在不同扰动条件下的稳健性，我们基于前述三类扰动方法构造测试集，并分别计算主分类概率（\texttt{prob\_main}）与多分支探针加权得到的综合评分 $S$。分析流程如下：
-%
-% 首先，将原始测试集样本按扰动类型与强度划分为多个子集，涵盖：
-% (i)~\textbf{细粒度特征通道扰动}（包括 RMS/相位扰动、倾斜式 EQ、窄带峰值 EQ、共振峰微调、节奏微变及音高/谐噪比调整）；
-% (ii)~\textbf{频率域参数均衡器扰动}（多组中心频率、增益、品质因数组合的窄带或宽带 \emph{peaking} EQ）；
-% (iii)~\textbf{音轨合并扰动}（与环境音如城市、公园、雨声按不同比例混合）。
-% 各扰动均设有 \texttt{mild}、\texttt{medium}、\texttt{strong} 三档强度，处理后统一归一化 RMS，以消除整体响度差异的影响。
-%
-% 随后，对每个扰动子集输入模型进行推理，统计其 $\texttt{prob\_main}$ 与 $S$ 的均值及分布范围，并与原始样本结果对照，计算相对降幅和标准差变化，从而量化不同扰动对模型检测性能的冲击程度。
-%
-% 最后，将结果按扰动家族汇总，比较主分类头与融合评分在抗扰动能力上的差异，重点关注高频注入、环境噪声混入、共振峰微调等高风险扰动下，模型预测稳定性与置信度的变化规律。
-%
-% \begin{table}[H]
-% \centering
-% \caption{不同扰动类型下主分类概率与综合评分均值对比}
-% \label{tab:family-stats}
-% \begin{tabular}{lcccc}
-% \toprule
-% 扰动家族（Family） & 示例 & 样本数 & $\texttt{prob\_main}$均值 & $S$均值 \\
-% \midrule
-% \textbf{comboAll}       & 多种扰动叠加版本                 & 1  & \textbf{0.764} & \textbf{0.776} \\
-% \textbf{pitchHNR}       & 微转调 + 谐噪比调整              & 1  & 0.659          & 0.757 \\
-% \textbf{specEQ}         & 频谱均衡/倾斜（EQ）              & 7  & 0.604          & 0.727 \\
-% \textbf{highFreqInject} & 高频注入（HI）                   & 8  & 0.461          & 0.667 \\
-% \textbf{ambientNoise}   & 环境噪声混入（雨声、森林、城市） & 4  & 0.422          & 0.671 \\
-% \textbf{other}          & 其他扰动方式                     & 13 & 0.411          & 0.719 \\
-% \bottomrule
-% \end{tabular}
-% \end{table}
-%
-% 由表~\ref{tab:family-stats} 可见，不同扰动类型对模型的影响程度差异显著。多种扰动叠加版本（comboAll）在主分类概率和综合评分上均维持在 0.76 以上，表明模型在面对复合扰动时依然具备较强的鲁棒性。轻微的音高平移与谐噪比调整（pitchHNR）同样表现出较好适应性，$S$ 值达到 0.757。相比之下，频谱均衡/倾斜（specEQ）使主分类概率下降至 0.604，而高频注入（highFreqInject）与环境噪声混入（ambientNoise）对模型影响更为显著，\texttt{prob\_main} 分别降至 0.461 和 0.422，综合评分亦明显降低。尤其是 ambientNoise，在较低响度比例下即可造成显著干扰，表明其在特征空间中对时域与频域模式均有破坏性。此外，“other”类扰动虽然类型多样，但平均表现略优于 ambientNoise，提示高频噪声与环境混入等扰动情形仍是提升模型鲁棒性的重点方向。
-%
-%
-%
-%
-%
-%
-% \subsubsection{归因分析：分支表征与扰动敏感性的关联}
-% 为识别检测器对不同声学特征的依赖，我们在分支嵌入空间（即各CNN分支输入到全连接层的一维张量）进行了降维可视化，分析数据点在各个分支上的区域可分性，同时使用AUC、ACC、Fisher比率和logit等指标来量化分析各个分支对最终决策的贡献程度。
-%
-% \paragraph{（1）区域可分性：时域分支更“可分”，formant 分支更“缠绕”。}
-% 在图~\ref{fig:time_tsne} 中，时域嵌入出现了与主簇明显分离的红色带状簇，显示 AI 音频在\emph{能量包络/瞬态结构}维度存在系统性轨迹；
-% PCA（图~\ref{fig:time_pca}）虽线性可分性有限，但仍呈现出沿第一主轴的标签渐变。
-%
-% \begin{figure}[H]
-%   \centering
-%   \includegraphics[width=.4\linewidth]{images_in_paper/embed_time_tsne.png}
-%   \includegraphics[width=.4\linewidth]{images_in_paper/embed_time_pca.png}
-%   \caption{时域分支嵌入：t-SNE（左）与 PCA（右）。}
-%   \label{fig:time_tsne}
-%   \label{fig:time_pca}
-% \end{figure}
-%
-% 相对地，formant 分支（图~\ref{fig:formant_tsne}）总体上红蓝高度交织，仅在若干局部“岛状”区域聚集，
-% 表明\emph{整体}频谱包络并不足以稳定区分全部 AI 样式，但对特定风格（如固定声道/共振峰模板）的 AI 样本存在\emph{局部}可分性。
-%
-% \begin{figure}[H]
-%   \centering
-%   \includegraphics[width=.4\linewidth]{images_in_paper/embed_formant_tsne.png}
-%   \includegraphics[width=.4\linewidth]{images_in_paper/embed_formant_pca.png}
-%   \caption{formant 分支嵌入：t-SNE（左）与 PCA（右）。}
-%   \label{fig:formant_tsne}
-%   \label{fig:formant_pca}
-% \end{figure}
-%
-% \paragraph{（2）量化分析：有针对性的微扰能显著改变判别。}
-% 我们对相同音源施加多类微扰并记录主分类概率（$\mathrm{prob\_main}$）变化。
-% 结果表明，\emph{时域动态扰动}（\texttt{timeDyn\_strong/medium/\ldots}）与
-% \emph{类共振峰扰动}（\texttt{formantish\_strong/medium/\ldots}）可将判别概率稳定压低
-% （例如 \texttt{timeDyn\_strong} $\approx 0.24$，\texttt{formantish\_strong} $\approx 0.30$），
-% 显著低于原始片段；而单纯的高频窄带 EQ 微调（如 $15$\,kHz、$\pm(0.8\!\sim\!1.8)$\,dB）影响较弱。
-% 结合探针头输出可见，时域与 formant 分支单独判断时的 AI 概率降幅最大，表明模型决策高度依赖
-% \textbf{时域包络/动态}与\textbf{人声共振峰布局}两类特征；一旦这些特征被微调，决策边界即向“非 AI”区域偏移。
-%
-% 为了初步分析各个分支对最终决策的决策方向的影响，我们构造了如下两个指标来进行量化分析：
-% \begin{itemize}
-%   \item \textbf{logit}：
-%   模型主分类器在融合所有分支嵌入后的线性层输出（未经过 Sigmoid）。
-%   logit 值的正负反映了模型决策的方向（正值偏向 AI，负值偏向非 AI），绝对值大小反映了决策的置信度。
-%   在分析中，logit 可作为样本被判定为 AI 或非 AI 的“力度”指标，用于衡量扰动前后决策信号的变化。
-%
-%   \item \textbf{contrib}：
-%   按分支拆分最终线性层权重，对该分支嵌入向量与权重做点积，得到该分支对 logit 的加和贡献。
-%   若无法直接分块，可用 Grad$\times$Input 在分支拼接点近似计算。
-%   贡献值为正表示该分支推动决策向 AI 方向，为负则推动向非 AI 方向。
-%   通过统计 contrib 值的分布与类别差异，可以识别在整体判决中起主导作用的分支，并结合扰动实验分析其易受攻击性。
-% \end{itemize}
-%
-% 图~\ref{fig:contrib_means} 展示了不同分支在 AI 与非 AI 样本上的平均贡献值及标准误差。
-% 可以看到，\texttt{spec} 分支在两类样本中均呈显著正贡献（推高 AI 判别概率），
-% \texttt{time} 分支则整体呈负贡献（抑制 AI 判别），且幅度较大；
-% \texttt{prosody}、\texttt{formant} 与 \texttt{hjorth} 分支的贡献幅度较小，
-% 说明在多数样本中，它们对最终判别的直接推动作用有限。
-%
-% \begin{figure}[H]
-%   \centering
-%   \includegraphics[width=.75\linewidth]{images_in_paper/contrib_means_by_class.png}
-%   \caption{不同分支在 AI 与非 AI 样本上的平均 logit 贡献（均值 $\pm$ SEM）。}
-%   \label{fig:contrib_means}
-% \end{figure}
-%
-% 为了考察分支贡献的相关性，我们计算了样本层面的皮尔逊相关系数矩阵（图~\ref{fig:contrib_corr}）。
-% 结果显示，\texttt{spec} 与 \texttt{time} 分支呈显著负相关，
-% 表明它们在多数样本的决策中存在一定的“对冲”关系——当一个分支强烈推动向 AI 方向时，另一个分支往往抑制该判别。
-% 此外，\texttt{prosody} 与 \texttt{time}、\texttt{formant} 的正相关，说明这些分支在部分样本中可能协同作用。
-%
-% \begin{figure}[H]
-%   \centering
-%   \includegraphics[width=.5\linewidth]{images_in_paper/contrib_correlation.png}
-%   \caption{各分支 logit 贡献的相关性矩阵（皮尔逊相关系数）。}
-%   \label{fig:contrib_corr}
-% \end{figure}
-%
-% 图~\ref{fig:contrib_violin} 给出了所有样本的分支贡献分布。
-% 可以看出，\texttt{time} 分支的贡献分布跨度最大，从强负到强正均有覆盖，说明它在部分样本中具有极高的判别权重，而在另一些样本中几乎不参与判别；
-% \texttt{spec} 分支则分布相对集中且整体偏正，体现了其在多数样本中稳定推高 AI 判别的趋势；
-% \texttt{formant} 分支分布较分散，但极端值较多，可能在某些特定声学风格下起关键作用。
-%
-% \begin{figure}[H]
-%   \centering
-%   \includegraphics[width=.75\linewidth]{images_in_paper/contrib_violin_all.png}
-%   \caption{各分支 logit 贡献的分布（所有样本）。}
-%   \label{fig:contrib_violin}
-% \end{figure}
-%
-% 我们为每个分支计算了如下指标，表征其决策能力，分析最终决策对各个分支的依赖性：
-%
-% \begin{itemize}
-%   \item \textbf{AUC（Area Under the ROC Curve）}：
-%   表示在所有可能的分类阈值下，模型正确区分正负样本的概率,由此绘制出图~\ref{fig:roc}。
-%   ROC曲线数据点越集中在左上角，则特定阈值下召回率与误报率之比越高，AUC 值越接近 1，说明该分支嵌入在全范围阈值下的判别能力越强；
-%   AUC = 0.5 表示无判别能力，相当于随机猜测。
-%
-%   \item \textbf{ACC（Accuracy）}：
-%   表示在固定分类阈值（本文取 0.5）下，分支嵌入在验证集上的分类准确率。
-%   ACC 关注的是单一阈值下的硬判别性能，反映该分支在常规决策条件下的直接预测效果。
-%
-%   \item \textbf{Fisher\_mean}：
-%   衡量类间分离度与类内紧凑度的比值。其定义为：
+%   \vspace{0.4em}
+%   \item \textbf{推理与统计：}\\
+%   对每个扰动子集输入模型推理，计算：
 %   \[
-%   \text{Fisher Ratio} = \frac{\sum_d (\mu_d^{+} - \mu_d^{-})^2}{\sum_d (\sigma_d^{+2} + \sigma_d^{-2})}
+%   \text{均值}(\texttt{prob\_main}), \quad \text{均值}(S), \quad
+%   \text{相对降幅}, \quad \text{标准差变化}
 %   \]
-%   其中 $\mu_d^{+}$ 和 $\mu_d^{-}$ 分别为第 $d$ 维在正、负样本上的均值，
-%   $\sigma_d^{+2}$ 和 $\sigma_d^{-2}$ 为对应方差。
-%   Fisher 比率越大，说明该分支的嵌入向量在不同类别间分布差异更明显，且类内方差更小，有利于判别。
+%   以量化扰动对检测性能的影响。
 %
-% \end{itemize}
+%   \vspace{0.4em}
+%   \item \textbf{结果汇总与对比：}\\
+%   比较主分类头与融合评分在抗扰动能力上的差异，
+%   重点关注：
+%   \begin{itemize}
+%     \item 高频注入（spectral tilt / EQ）
+%     \item 环境噪声混入（noise mix）
+%     \item 共振峰微调（formant shift）
+%   \end{itemize}
+%   分析模型预测稳定性与置信度变化规律。
+% \end{enumerate}
 %
-% 这种扰动敏感性与分支的单独判别能力高度一致：
-% 定量评估显示，时域分支在 5 折交叉验证下的 AUC 达到 $0.8251\!\pm\!0.0076$，
-% ACC 为 $0.7627\!\pm\!0.0025$，Fisher 比率 $0.1324$；
-% formant 分支的 AUC 为 $0.8161\!\pm\!0.0077$，ACC 为 $0.7413\!\pm\!0.0101$，
-% Fisher 比率 $0.0912$。
-% 两者均显著高于 prosody（AUC $0.7191$，Fisher $0.0071$）与 hjorth（AUC $0.6963$，Fisher $0.0054$）等弱分支，
-% 说明模型在融合决策时，确实更依赖时域包络/动态与人声共振峰布局等特征；
-% 当这两类特征被结构性微调时，主分类概率便会大幅偏向“非 AI”区域。
-%
-% \begin{figure}[H]
-%   \centering
-%   \includegraphics[width=.45\linewidth]{images_in_paper/roc_time.png}
-%   \includegraphics[width=.45\linewidth]{images_in_paper/roc_formant.png}
-%   \caption{时域分支与 formant 分支 ROC 曲线。}
-%   \label{fig:roc}
-% \end{figure}
-%
-% \begin{figure}[H]
-%   \centering
-%   \includegraphics[width=.32\linewidth]{images_in_paper/branch_metrics_auc_acc.png}
-%   \includegraphics[width=.32\linewidth]{images_in_paper/branch_fisher.png}
-%   \caption{分支可分性定量指标：AUC/ACC（中）、Fisher 比率（右）。}
-%   \label{fig:branch_silhouette}
-%   \label{fig:branch_aucacc}
-%   \label{fig:branch_fisher}
-% \end{figure}
-%
-%
-% \paragraph{（3）偏差与失败模式。}
-% 在排序表中，自然环境纹理（如雨声、林声、城市公园环境）也获得较低的 AI 概率，提示模型对\emph{非乐音/非稳态}素材存在天然“真值”偏好，
-% 可能源于训练集分布差异（音乐性与稳态谐波成分占比更高）。
-% 这类偏差意味着：通过\emph{轻度压缩+全通相位}改变瞬态，以及\emph{小幅峰值 EQ} 微移 formant，即可在不破坏主观听感的前提下，提高“过检”概率。
-%
-% \subsubsection{改进方向}
-% 综合嵌入结构与扰动响应，我们将特征归因排序为：\textbf{时域动态（首要）} $>$ \textbf{频谱包络/共振峰（次要）} $>$ \textbf{高频细窄带均衡（较弱）}。
-% 为缓解脆弱性，未来可以考虑在训练中加入：（i）动态压缩、全通相位、微小时间伸缩的强数据增强；（ii）formant 随机漂移/声道随机化；
-% （iii）在多分支架构上引入一致性正则或分支 dropout，以降低单一分支的主导性，并对自然环境纹理补充“反例”样本以纠正数据偏差。
-%
-% \section{模型优缺点与推广}
-%
-% \begin{frame}[fragile,allowframebreaks]{模型优缺点与推广}
-% \small
-% \paragraph{模型优点} 
-% 本文提出的多分支 CNN 检测模型能够同时处理时域、频域、音高与音质等多种声学特征，结构上实现了多源信息的并行提取与融合，充分利用了不同特征维度之间的互补性。实验结果表明，该模型在常规测试集上取得了较高的分类准确率（验证集稳定在 89\%--90\%），且在多数轻中度扰动条件下保持了良好的检测性能；在较强扰动下，全连阶层输出的AI判别概率会有明显扰动，但是，综合五个分支探针头的概率计算出的AI痕迹评分（式~\ref{eq:ai_score}），在强扰动下仍然坚挺；由此可见模型具备一定的泛化能力与鲁棒性。此外，模型规模相对轻量，计算开销低，易于在多平台部署，并可支持实时检测需求。
-%
-% \paragraph{模型不足} 
-% 尽管整体性能优良，但鲁棒性分析发现模型在高频噪声注入（highFreqInject）与环境噪声混入（ambientNoise）等特定扰动下的检测概率显著下降，表明在面对宽带噪声和高频干扰时的特征表达仍存在脆弱性。此外，当前特征融合层为固定权重，未能根据输入特征的质量动态调整各分支贡献，这在某些特征受扰较大的情况下可能限制了模型的自适应能力。训练数据主要集中于有限风格与生成引擎，对极端风格、全新算法生成的音乐仍可能存在适配不足。
-%
-% \paragraph{模型推广} 
-% 该多分支 CNN 框架具备良好的可扩展性，可根据不同检测任务灵活替换或新增特征分支。例如，在语音深度伪造检测中，可增加语音特有的相位一致性特征分支；在环境音场景识别中，可引入空间声学特征分支。模型也可与自编码器异常检测方法结合，用自监督方式预训练分支特征提取器，再进行有监督分类，从而提升在低资源或开放域场景下的表现。进一步地，可将该方法与传统机器学习特征融合（如 XGBoost、SVM）进行混合，形成多模态、多尺度的综合检测框架，推广到更多 AI 音频内容安全相关领域。
-%
-% \appendix
 % \end{frame}
+%
+% \subsection{鲁棒性结果}
+\begin{frame}[fragile,allowframebreaks]{不同扰动类型下的鲁棒性表现}
+下表汇总了五组混淆效果较大的实验结果。
+\small
+\begin{table}[h]
+\centering
+\caption{不同扰动类型下主分类概率与综合评分均值对比}
+\label{tab:family-stats}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lcccc}
+\toprule
+扰动方式 & 示例 & 样本数 & $\texttt{prob\_main}$ 均值 & $S$ 均值 \\
+\midrule
+\textbf{comboAll}       & 多种扰动叠加版本                 & 1  & \textbf{0.764} & \textbf{0.776} \\
+\textbf{pitchHNR}       & 音高调整 + 白噪音注入              & 1  & 0.659          & 0.757 \\
+\textbf{specEQ}         & EQ              & 7  & 0.604          & 0.727 \\
+\textbf{highFreqInject} & 高频注入（HI）                   & 8  & 0.461          & 0.667 \\
+\textbf{ambientNoise}   & 环境噪声混入（雨声、森林、城市） & 4  & 0.422          & 0.671 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+\end{frame}
+\begin{frame}[fragile,allowframebreaks]{不同扰动类型下的鲁棒性表现}
+% \vspace{0.8em}
+\textbf{分析：}
+\begin{itemize}
+  \item \textbf{总体表现：} 多种扰动叠加（\texttt{comboAll}）在主分类概率和综合评分上仍保持在 0.76 以上，模型具备较强鲁棒性；
+  \item \textbf{轻度扰动：} 音高与谐噪比调整（\texttt{pitchHNR}）对性能影响较小，综合评分 $S=0.757$；
+  \item \textbf{中等扰动：} 频谱均衡/倾斜（\texttt{specEQ}）使主分类概率下降至 0.604；
+  \item \textbf{高风险扰动：} 高频注入与环境噪声混入显著降低模型输出置信度，\texttt{prob\_main} 分别降至 0.461 和 0.422；
+  \item \textbf{综合结论：} 环境噪声在较低响度比例下即可破坏时域与频域模式，是当前模型鲁棒性提升的关键方向。
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}[fragile,allowframebreaks]{量化分析：有针对性的微扰能显著改变判别}
+
+\textbf{实验思路：}
+对相同音源施加多类微扰，记录主分类概率（$\mathrm{prob\_main}$）变化。
+
+\vspace{0.5em}
+\textbf{主要发现：}
+\begin{itemize}
+  \item \emph{时域动态扰动}（\texttt{timeDyn\_strong/medium/...}）与
+        \emph{类共振峰扰动}（\texttt{formantish\_strong/medium/...}）显著降低分类概率；
+  \item 典型结果：
+  \[
+    \texttt{timeDyn\_strong} \approx 0.24,\quad
+    \texttt{formantish\_strong} \approx 0.30,
+  \]
+  均远低于原始片段；
+  \item 高频窄带 EQ 微调（$15$\,kHz, $\pm(0.8\!\sim\!1.8)$\,dB）影响较弱；
+  \item 探针结果表明，模型决策高度依赖：
+  \begin{itemize}
+    \item \textbf{时域包络/动态特征}；
+    \item \textbf{人声共振峰布局特征}。
+  \end{itemize}
+\end{itemize}
+
+\vspace{0.6em}
+一旦这些特征被微调，决策边界明显向“非 AI”区域偏移。
+\end{frame}
+
+
+
+\subsection{归因分析：分支数据流与扰动敏感性的关联}
+\begin{frame}[fragile,allowframebreaks]{归因分析：分支数据流特征与扰动敏感性的关联}
+
+\textbf{目的：}  
+探究检测器在不同分支上的数据流特征与其对扰动的敏感性之间的关系。
+
+\vspace{0.6em}
+\textbf{方法：}
+\begin{itemize}
+  \item 对各 CNN 分支的嵌入空间（即输入全连接层前的一维张量）进行降维可视化；
+  \item 分析各分支在嵌入空间中的类别可分性；
+  \item 采用 AUC、ACC、Fisher 比率与 logit 统计量量化每个分支对最终决策的贡献。
+\end{itemize}
+\end{frame}
+
+% \begin{frame}[fragile,allowframebreaks]{归因分析：分支表征与扰动敏感性的关联}
+% % \vspace{0.6em}
+% \textbf{发现要点：}
+% \begin{enumerate}
+%   \item \textbf{时域分支更“可分”}：AI 音频在能量包络与瞬态结构维度上形成独立簇；
+%   \item \textbf{共振峰分支更“缠绕”}：formant 嵌入分布交叠，区分度较低；
+%   \item PCA 投影虽线性可分性有限，但沿第一主轴可观察到标签渐变。
+% \end{enumerate}
+% \end{frame}
+
+\begin{frame}[fragile,allowframebreaks]{归因分析：分支数据流特征与扰动敏感性的关联}
+% \vspace{0.6em}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.45\linewidth]{images_in_paper/embed_time_tsne.png}
+  \hfill
+  \includegraphics[width=0.45\linewidth]{images_in_paper/embed_time_pca.png}
+  \caption{时域分支嵌入可视化：t-SNE（左）与 PCA（右）。}
+  \label{fig:time_tsne_pca}
+\end{figure}
+
+\end{frame}
+
+
+% \begin{frame}[fragile,allowframebreaks]{归因分析：共振峰分支嵌入特征}
+%
+% \textbf{观察：}  
+% formant 分支在嵌入空间中的红蓝标签高度交织，仅在部分区域出现局部聚集。
+%
+% \vspace{0.6em}
+% \textbf{分析要点：}
+% \begin{itemize}
+%   \item 整体频谱包络不足以稳定区分所有 AI 样式；
+%   \item 局部区域（“岛状簇”）反映特定风格的 AI 样本，
+%         例如使用相似声道或共振峰模板的生成模型；
+%   \item 与时域分支相比，formant 分支特征的全局可分性显著较低，
+%         但具备一定的局部判别力。
+% \end{itemize}
+% \end{frame}
+
+\begin{frame}[fragile,allowframebreaks]{归因分析：共振峰分支嵌入特征}
+% \vspace{0.6em}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.45\linewidth]{images_in_paper/embed_formant_tsne.png}
+  \hfill
+  \includegraphics[width=0.45\linewidth]{images_in_paper/embed_formant_pca.png}
+  \caption{formant 分支嵌入可视化：t-SNE（左）与 PCA（右）。}
+  \label{fig:formant_embed}
+\end{figure}
+
+\end{frame}
+
+
+
+\begin{frame}[fragile,allowframebreaks]{量化分析：logit 与 contrib 指标定义}
+
+为分析各分支对最终决策的影响方向，定义两个指标：
+
+\vspace{0.6em}
+\textbf{1. logit 指标：}
+\begin{itemize}
+  \item 为主分类器融合所有分支嵌入后线性层的输出（未经过 Sigmoid）；
+  \item 正值表示模型倾向判为 \textbf{AI}，负值表示倾向 \textbf{非 AI}；
+  \item 绝对值大小反映决策置信度；
+  \item 可视为样本被判为 AI 的“力度”指标，用于衡量扰动前后决策信号变化。
+\end{itemize}
+
+\vspace{0.6em}
+\textbf{2. contrib 指标：}
+\begin{itemize}
+  \item 将最终线性层权重按分支拆分，对该分支嵌入与权重求点积：
+    \[
+      \text{contrib}_k = \mathbf{w}_k^\top \mathbf{h}_k,
+    \]
+    其中 $k$ 表示第 $k$ 个分支；
+  \item 若无法显式分块，可用 Grad$\times$Input 在拼接点近似计算；
+  \item contrib 值为正：推动决策向 AI；为负：推动决策向非 AI。
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile,allowframebreaks]{量化分析结果：分支贡献对比}
+% \paragraph 分支贡献对比
+\begin{figure}
+  \centering
+  \includegraphics[width=0.8\linewidth]{images_in_paper/contrib_means_by_class.png}
+  \caption{各分支在 AI 与非 AI 样本上的平均贡献值（均值±标准误差）。}
+  \label{fig:contrib_means}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile,allowframebreaks]{量化分析结果：分支贡献对比}
+\textbf{结果概要：}
+\begin{itemize}
+  \item 图~\ref{fig:contrib_means} 展示了不同分支在 AI 与非 AI 样本上的
+        平均贡献值（均值 ± 标准误差）；
+  \item \texttt{spec} 分支在两类样本中均呈显著\textbf{正贡献}，
+        推高 AI 判别概率；
+  \item \texttt{time} 分支整体为\textbf{负贡献}，
+        对 AI 判别起抑制作用，且幅度较大；
+  \item \texttt{prosody}、\texttt{formant} 与 \texttt{hjorth} 分支的贡献幅度较小，
+        表明其对最终判决的直接推动作用有限。
+\end{itemize}
+
+% \vspace{0.6em}
+\end{frame}
+
+\begin{frame}{量化分析：分支贡献的相关性与对冲关系}
+
+\textbf{平均贡献分析：}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.75\linewidth]{images_in_paper/contrib_means_by_class.png}
+  \caption{不同分支在 AI 与非 AI 样本上的平均 logit 贡献（均值 $\pm$ SEM）。}
+  \label{fig:contrib_means_by_class}
+\end{figure}
+
+\textbf{相关性分析：}
+\begin{itemize}
+  \item 计算样本层面的皮尔逊相关系数矩阵；
+  \item 结果如图~\ref{fig:contrib_corr} 所示：
+    \begin{itemize}
+      \item \texttt{spec} 与 \texttt{time} 分支呈显著\textbf{负相关}；
+      \item 表明它们在多数样本中存在“对冲”关系：
+        一个分支推动判为 AI 时，另一个往往抑制；
+      \item \texttt{prosody} 与 \texttt{time}、\texttt{formant} 呈\textbf{正相关}，
+        暗示在部分样本中可能协同作用。
+    \end{itemize}
+\end{itemize}
+
+\vspace{0.5em}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\linewidth]{images_in_paper/contrib_correlation.png}
+  \caption{各分支 logit 贡献的相关性矩阵（皮尔逊相关系数）。}
+  \label{fig:contrib_corr}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{量化分析：分支贡献的分布特性}
+
+\textbf{样本级分布：}
+\begin{itemize}
+  \item 图~\ref{fig:contrib_violin} 展示各分支在所有样本上的 logit 贡献分布；
+  \item \texttt{time} 分支：分布跨度最大，从强负到强正均有覆盖；
+        说明其在不同样本中权重差异显著；
+  \item \texttt{spec} 分支：分布集中且整体偏正，
+        表明其稳定推高 AI 判别；
+  \item \texttt{formant} 分支：分布较分散、极端值多，
+        可能在特定声学风格下起关键作用；
+  \item 其他分支（\texttt{prosody}、\texttt{hjorth}）贡献较弱，
+        说明其在多数样本中的直接作用有限。
+\end{itemize}
+
+\vspace{0.6em}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.75\linewidth]{images_in_paper/contrib_violin_all.png}
+  \caption{各分支 logit 贡献的分布（所有样本）。}
+  \label{fig:contrib_violin}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{量化分析：分支判别能力指标定义}
+
+\textbf{目的：}  
+评估各分支嵌入的判别能力，分析最终决策对不同分支的依赖性。
+
+\vspace{0.6em}
+\textbf{主要指标：}
+
+\begin{itemize}
+  \item \textbf{AUC（Area Under the ROC Curve）}
+  \begin{itemize}
+    \item 表示在所有可能阈值下模型正确区分正负样本的概率；
+    \item ROC 曲线越靠近左上角，说明召回率高、误报率低；
+    \item AUC 值越接近 1 → 判别能力越强；AUC = 0.5 → 等价于随机猜测；
+    \item 图~\ref{fig:roc} 展示各分支的 ROC 曲线。
+  \end{itemize}
+
+  \vspace{0.4em}
+  \item \textbf{ACC（Accuracy）}
+  \begin{itemize}
+    \item 在固定分类阈值（本文取 0.5）下的分类准确率；
+    \item 反映分支在常规决策条件下的直接预测性能；
+    \item 强调“硬判别”能力。
+  \end{itemize}
+
+  \vspace{0.4em}
+  \item \textbf{Fisher 比率（Fisher\_mean）}
+  \begin{itemize}
+    \item 衡量类间分离度与类内紧凑度的比值：
+      \[
+      \text{Fisher Ratio} =
+      \frac{\sum_d (\mu_d^{+} - \mu_d^{-})^2}
+           {\sum_d (\sigma_d^{+2} + \sigma_d^{-2})}
+      \]
+    \item Fisher 比率越大，表示嵌入在不同类别间的分布差异越明显；
+    \item 说明该分支在特征空间中具有更好的可分性。
+  \end{itemize}
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{量化分析结果：主要分支的判别能力}
+
+\textbf{结论概览：}
+扰动敏感性与各分支的单独判别能力高度一致。
+
+\vspace{0.6em}
+\textbf{定量结果（5 折交叉验证）：}
+\begin{itemize}
+  \item \textbf{时域分支（time）：}  
+    AUC $=0.8251\!\pm\!0.0076$，ACC $=0.7627\!\pm\!0.0025$，Fisher 比率 $=0.1324$；
+  \item \textbf{formant 分支：}  
+    AUC $=0.8161\!\pm\!0.0077$，ACC $=0.7413\!\pm\!0.0101$，Fisher 比率 $=0.0912$；
+  \item 均显著高于 \texttt{prosody}（AUC $0.7191$，Fisher $0.0071$）与  
+        \texttt{hjorth}（AUC $0.6963$，Fisher $0.0054$）；
+  \item 表明模型决策更依赖：
+    \begin{itemize}
+      \item \textbf{时域包络 / 动态结构}；
+      \item \textbf{人声共振峰布局特征}。
+    \end{itemize}
+\end{itemize}
+
+\vspace{0.6em}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.45\linewidth]{images_in_paper/roc_time.png}
+  \hfill
+  \includegraphics[width=0.45\linewidth]{images_in_paper/roc_formant.png}
+  \caption{时域分支与 formant 分支 ROC 曲线。}
+  \label{fig:roc}
+\end{figure}
+
+\end{frame}
+
+
+\begin{frame}{量化分析结果：分支可分性指标对比}
+
+\textbf{对比分析：}
+\begin{itemize}
+  \item 图~\ref{fig:branch_metrics} 展示各分支的 AUC、ACC 与 Fisher 比率；
+  \item 时域与 formant 分支在三个指标上均占优；
+  \item prosody 与 hjorth 分支指标普遍偏低，表明其独立判别能力有限；
+  \item 说明融合决策阶段模型主要依赖结构性强、时频特征稳定的分支。
+\end{itemize}
+
+\vspace{0.6em}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.32\linewidth]{images_in_paper/branch_metrics_auc_acc.png}
+  \includegraphics[width=0.32\linewidth]{images_in_paper/branch_fisher.png}
+  \caption{分支可分性定量指标：AUC/ACC（左）、Fisher 比率（右）。}
+  \label{fig:branch_metrics}
+\end{figure}
+
+\textbf{总结：}
+当时域包络或共振峰结构被扰动时，  
+模型主分类概率显著向“非 AI”区域偏移，验证了模型对这些关键声学特征的依赖性。
+\end{frame}
+
+\begin{frame}{偏差与失败模式}
+
+\textbf{观察：}
+\begin{itemize}
+  \item 自然环境纹理（雨声、林声、城市公园等）在排序表中获得较低 AI 概率；
+  \item 模型对\emph{非乐音 / 非稳态}素材存在天然“真值”偏好；
+  \item 该偏差可能源于训练集分布不均：
+        音乐性与稳态谐波成分占比更高。
+\end{itemize}
+
+\vspace{0.6em}
+\textbf{启示：}
+\begin{itemize}
+  \item 通过\textbf{轻度压缩 + 全通相位}改变瞬态，
+        或\textbf{小幅峰值 EQ} 微移 formant，
+        可在不改变主观听感的前提下显著提高“过检”概率；
+  \item 说明模型在\textbf{稳态性}与\textbf{谐波结构}上的依赖导致偏差。
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}{改进方向}
+
+\textbf{特征归因排序：}
+\[
+\text{时域动态（首要）} \; > \;
+\text{频谱包络 / 共振峰（次要）} \; > \;
+\text{高频细窄带均衡（较弱）}
+\]
+
+\vspace{0.6em}
+\textbf{改进建议：}
+\begin{enumerate}
+  \item \textbf{数据增强：}  
+        在训练中加入动态压缩、全通相位、微小时间伸缩等扰动；
+  \item \textbf{特征随机化：}  
+        引入 formant 随机漂移与声道随机化；
+  \item \textbf{结构改进：}  
+        在多分支架构中加入一致性正则或分支 dropout，
+        降低单一分支主导性；
+  \item \textbf{数据再平衡：}  
+        对自然环境纹理补充反例样本，
+        缓解训练数据偏差。
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}{模型优缺点}
+
+\small
+\paragraph{模型优点}
+\begin{itemize}
+  \item 多分支 CNN 可并行提取时域、频域、音高与音质特征；
+  \item 融合层充分利用多源信息的互补性；
+  \item 验证集准确率稳定在 89\%--90\%，
+        对多数轻中度扰动具有良好鲁棒性；
+  \item 五分支探针头融合的 AI 痕迹评分在强扰动下仍保持稳定；
+  \item 模型轻量、计算成本低、可实时检测并跨平台部署。
+\end{itemize}
+
+\vspace{0.6em}
+\paragraph{模型不足}
+\begin{itemize}
+  \item 在高频噪声注入（\texttt{highFreqInject}）与环境噪声混入（\texttt{ambientNoise}）下性能下降明显；
+  \item 特征融合层为固定权重，缺乏对分支质量的动态自适应；
+  \item 训练数据覆盖有限，对新风格或新算法生成的音乐适配性不足。
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{模型推广与应用前景}
+
+\small
+\paragraph{框架扩展性}
+\begin{itemize}
+  \item 多分支结构可灵活替换或新增特征分支；
+  \item 语音伪造检测：加入相位一致性特征；
+  \item 环境音识别：引入空间声学特征；
+  \item 可结合自编码器进行自监督预训练，提高低资源场景性能。
+\end{itemize}
+
+\vspace{0.6em}
+\paragraph{混合检测思路}
+\begin{itemize}
+  \item 将本模型与传统机器学习（如 XGBoost、SVM）特征融合；
+  \item 构建多模态、多尺度检测框架；
+  \item 推广至更多 AI 音频内容安全与生成溯源领域。
+\end{itemize}
+
+\vspace{0.8em}
+\centering
+{\Large \textbf{→ 面向开放域、低资源与实时检测的统一声学特征框架}}
+\end{frame}
+
 \begin{frame}[standout]
   谢谢大家！
 \end{frame}
+% \appendix
 \end{document}

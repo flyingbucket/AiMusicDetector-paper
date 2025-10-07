@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1759759993.92244 "presentation_beamer_fixed2.xdv" "presentation_beamer_fixed2.pdf" "presentation_beamer_fixed2" 1759759995.17073 0
-  "presentation_beamer_fixed2.xdv" 1759759993.77729 122660 0291d658d1b92515d88722a835d3d1f5 "xelatex"
+["xdvipdfmx"] 1759824722.78906 "presentation_beamer_fixed2.xdv" "presentation_beamer_fixed2.pdf" "presentation_beamer_fixed2" 1759824725.73712 0
+  "presentation_beamer_fixed2.xdv" 1759824722.6337 269368 4dd013889b934bc76c17676831082960 "xelatex"
   (generated)
   "presentation_beamer_fixed2.pdf"
   (rewritten before read)
-["xelatex"] 1759759990.93322 "presentation_beamer_fixed2.tex" "presentation_beamer_fixed2.xdv" "presentation_beamer_fixed2" 1759759995.16738 0
+["xelatex"] 1759824718.71228 "presentation_beamer_fixed2.tex" "presentation_beamer_fixed2.xdv" "presentation_beamer_fixed2" 1759824725.73346 0
   "/home/flyingbucket/apps/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/home/flyingbucket/apps/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/home/flyingbucket/apps/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -15,6 +15,11 @@
   "/home/flyingbucket/apps/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
   "/home/flyingbucket/apps/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm" 1246382020 940 75ac932a52f80982a9f8ea75d03a34cf ""
   "/home/flyingbucket/apps/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm" 1246382020 940 228d6584342e91276bf566bcf9716b83 ""
+  "/home/flyingbucket/apps/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/home/flyingbucket/apps/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm" 1136768653 1332 f817c21a1ba54560425663374f1b651a ""
+  "/home/flyingbucket/apps/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm" 1136768653 1344 8a0be4fe4d376203000810ad4dc81558 ""
+  "/home/flyingbucket/apps/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm" 1136768653 1336 3125ccb448c1a09074e3aa4a9832f130 ""
+  "/home/flyingbucket/apps/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm" 1136768653 1332 1fde11373e221473104d6cc5993f046e ""
   "/home/flyingbucket/apps/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/home/flyingbucket/apps/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
   "/home/flyingbucket/apps/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
@@ -241,13 +246,24 @@
   "/home/flyingbucket/apps/texlive/2025/texmf-var/web2c/xetex/xelatex.fmt" 1756487028 5897712 d6ef5338a733ebe98398f60aa422e7e4 ""
   "/home/flyingbucket/apps/texlive/2025/texmf.cnf" 1756486865.00552 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
   "images_in_paper/acc_train_val.png" 1759719966.22994 53780 ea7a0992b6c7e985883f3e178cbb1d77 ""
+  "images_in_paper/branch_fisher.png" 1759719966.22994 28670 6c80d40ce23f6261a0571d1b1027ea5b ""
+  "images_in_paper/branch_metrics_auc_acc.png" 1759719966.22994 37753 8a70b0ba876da2e272547092afd5eba3 ""
+  "images_in_paper/contrib_correlation.png" 1759719966.23094 45531 8041ed3bd68b5118ce70853dd4e35036 ""
+  "images_in_paper/contrib_means_by_class.png" 1759719966.23194 44397 e5b2f2b489fbf0f5cff5b885fec1534f ""
+  "images_in_paper/contrib_violin_all.png" 1759719966.23194 51018 ff352e6081735156ebfc5bd7d15c9bdd ""
+  "images_in_paper/embed_formant_pca.png" 1759719966.23494 272189 5b71dad3e0118f3bc28a30831aefe420 ""
+  "images_in_paper/embed_formant_tsne.png" 1759719966.23894 348599 bc21f26ad64b867f12081c4a059b3766 ""
+  "images_in_paper/embed_time_pca.png" 1759719966.26394 320112 29955f37a9437c06be19efccd0cba911 ""
+  "images_in_paper/embed_time_tsne.png" 1759719966.26694 255321 5e5eb5ffb85f2399b537e27a1c6ff710 ""
   "images_in_paper/loss_train_val.png" 1759719966.26881 46538 cad7e65443166455e1999e1c20e41d29 ""
   "images_in_paper/model.png" 1759719966.27294 415970 e4db7765fd13495ddc690453cfcd292d ""
-  "presentation_beamer_fixed2.aux" 1759759993.77579 9228 d7331dff2dddcd4040b86f65f134b45b "xelatex"
-  "presentation_beamer_fixed2.nav" 1759759993.77729 4122 41cc72c937baa68d8dd325976fbf370b "xelatex"
-  "presentation_beamer_fixed2.out" 1759759993.77729 940 8accd1d2e144d8e2bbfbb6d033a5e978 "xelatex"
-  "presentation_beamer_fixed2.tex" 1759759986.87828 32878 1b6976d6df3fb909d00ee422e07bbe29 ""
-  "presentation_beamer_fixed2.vrb" 1759759993.72529 1486 c7523bd94883f4d694181bf41cdd2e2c "xelatex"
+  "images_in_paper/roc_formant.png" 1759719966.2741 41709 10893f53ca87c88833a6a2472108d2aa ""
+  "images_in_paper/roc_time.png" 1759719966.27594 40335 1b543f209766297406ff44b8ee5522d1 ""
+  "presentation_beamer_fixed2.aux" 1759824722.63071 17910 229d4791b939193bde62da206a9200ed "xelatex"
+  "presentation_beamer_fixed2.nav" 1759824722.6337 8516 83d154376ff595ece0dcd7576d4d3aa1 "xelatex"
+  "presentation_beamer_fixed2.out" 1759824722.6337 1417 6ca4cdab0a44f11425b6415dca3aa0c8 "xelatex"
+  "presentation_beamer_fixed2.tex" 1759824713.32068 34809 0ace4fe0e7e7e1b7d2ad663e35edaf3f ""
+  "presentation_beamer_fixed2.vrb" 1759824722.17744 657 f65559b924779c7d78d2480f17c55b4c "xelatex"
   (generated)
   "presentation_beamer_fixed2.aux"
   "presentation_beamer_fixed2.log"

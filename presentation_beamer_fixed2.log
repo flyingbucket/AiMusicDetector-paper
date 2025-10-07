@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.30)  6 OCT 2025 22:13
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.30)  7 OCT 2025 16:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1382,6 +1382,224 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 [26
 
 ]
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+ (./presentation_beamer_fixed2.vrb)
+
+[27
+
+]
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+ (./presentation_beamer_fixed2.vrb)
+
+[28
+
+]
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+ (./presentation_beamer_fixed2.vrb)
+
+[29
+
+]
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+ (./presentation_beamer_fixed2.vrb)
+
+[30
+
+]
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+ (./presentation_beamer_fixed2.vrb)
+
+[31
+
+]
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+ (./presentation_beamer_fixed2.vrb
+
+LaTeX Font Warning: Font shape `TU/SourceHanSansCN(0)/m/it' undefined
+(Font)              using `TU/SourceHanSansCN(0)/m/n' instead on input line 9.
+
+)
+
+[32
+
+]
+
+[33
+
+
+]
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+ (./presentation_beamer_fixed2.vrb)
+
+[34
+
+]
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+ (./presentation_beamer_fixed2.vrb
+File: images_in_paper/embed_time_tsne.png Graphic file (type bmp)
+<images_in_paper/embed_time_tsne.png>
+File: images_in_paper/embed_time_pca.png Graphic file (type bmp)
+<images_in_paper/embed_time_pca.png>
+)
+
+[35
+
+]
+
+[36
+
+
+]
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+ (./presentation_beamer_fixed2.vrb
+File: images_in_paper/embed_formant_tsne.png Graphic file (type bmp)
+<images_in_paper/embed_formant_tsne.png>
+File: images_in_paper/embed_formant_pca.png Graphic file (type bmp)
+<images_in_paper/embed_formant_pca.png>
+)
+
+[37
+
+]
+
+[38
+
+
+]
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+ (./presentation_beamer_fixed2.vrb)
+
+[39
+
+]
+
+[40
+
+
+]
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+ (./presentation_beamer_fixed2.vrb
+File: images_in_paper/contrib_means_by_class.png Graphic file (type bmp)
+<images_in_paper/contrib_means_by_class.png>
+)
+
+[41
+
+]
+
+[42
+
+
+]
+
+[43
+
+
+]
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+ (./presentation_beamer_fixed2.vrb)
+
+[44
+
+]
+File: images_in_paper/contrib_means_by_class.png Graphic file (type bmp)
+<images_in_paper/contrib_means_by_class.png>
+File: images_in_paper/contrib_correlation.png Graphic file (type bmp)
+<images_in_paper/contrib_correlation.png>
+
+Overfull \vbox (380.79065pt too high) detected at line 669
+ []
+
+
+
+[45
+
+]
+File: images_in_paper/contrib_violin_all.png Graphic file (type bmp)
+<images_in_paper/contrib_violin_all.png>
+
+Overfull \vbox (143.1272pt too high) detected at line 695
+ []
+
+
+
+[46
+
+]
+Overfull \vbox (80.25845pt too high) detected at line 736
+ []
+
+
+
+[47
+
+]
+File: images_in_paper/roc_time.png Graphic file (type bmp)
+<images_in_paper/roc_time.png>
+File: images_in_paper/roc_formant.png Graphic file (type bmp)
+<images_in_paper/roc_formant.png>
+
+Overfull \vbox (193.19684pt too high) detected at line 769
+ []
+
+
+
+[48
+
+]
+File: images_in_paper/branch_metrics_auc_acc.png Graphic file (type bmp)
+<images_in_paper/branch_metrics_auc_acc.png>
+File: images_in_paper/branch_fisher.png Graphic file (type bmp)
+<images_in_paper/branch_fisher.png>
+
+Overfull \vbox (51.89659pt too high) detected at line 794
+ []
+
+
+
+[49
+
+]
+
+[50
+
+]
+
+[51
+
+]
+Overfull \vbox (27.14279pt too high) detected at line 865
+ []
+
+
+
+[52
+
+]
+Overfull \vbox (23.05188pt too high) detected at line 889
+ []
+
+
+
+[53
+
+]
+
+[54
+
+]
 \tf@nav=\write6
 \openout6 = `presentation_beamer_fixed2.nav'.
 
@@ -1396,16 +1614,20 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2022/07/14>
  ***********
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
 Package rerunfilecheck Info: File `presentation_beamer_fixed2.out' has not changed.
-(rerunfilecheck)             Checksum: 8ACCD1D2E144D8E2BBFBB6D033A5E978;940.
+(rerunfilecheck)             Checksum: 6CA4CDAB0A44F11425B6415DCA3AA0C8;1417.
  ) 
 Here is how much of TeX's memory you used:
- 33228 strings out of 468441
- 762264 string characters out of 5439576
- 1138393 words of memory out of 5000000
- 60971 multiletter control sequences out of 15000+600000
- 635048 words of font info for 121 fonts, out of 8000000 for 9000
+ 33651 strings out of 468441
+ 780608 string characters out of 5439576
+ 1141393 words of memory out of 5000000
+ 61342 multiletter control sequences out of 15000+600000
+ 636992 words of font info for 138 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,13n,142p,1893b,788s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on presentation_beamer_fixed2.xdv (26 pages, 122660 bytes).
+Output written on presentation_beamer_fixed2.xdv (54 pages, 269368 bytes).
