@@ -3,7 +3,6 @@
 \textbf{结论概览：}
 扰动敏感性与各分支的单独判别能力高度一致。
 
-\vspace{0.6em}
 \textbf{定量结果（5 折交叉验证）：}
 \begin{itemize}
   \item \textbf{时域分支（time）：}

@@ -50,26 +50,42 @@
 
 %---Document Begins---
 \begin{document}
-\begin{frame}{摘要}
-\small
+\begin{frame}[fragile,allowframebreaks]{量化分析：logit 与 contrib 指标定义}
+
+为分析各分支对最终决策的影响方向，定义两个指标：
+
+\vspace{0.6em}
+\textbf{1. logit 指标：}
 \begin{itemize}
-  \item 问题一：
-    \begin{itemize}
-      \item 基于\textbf{多分支卷积神经网络（Multi-Branch CNN）}的端到端 AI 音频检测与评分模型；
-      \item 从\textbf{时域、频域及声学统计量}等角度提取 11 类特征，多分支并行融合判别；
-    \end{itemize}
-
-  \item 问题二：
-    \begin{itemize}
-      \item 设计\textbf{分支探针机制}，依据各分支判别准确率加权，构建可解释的 AI 痕迹评分；
-    \end{itemize}
-
-  \item 问题三：
-    \begin{itemize}
-      \item 引入\textbf{频谱均衡、高频注入、环境噪声混入}等扰动测试模型鲁棒性；
-    \end{itemize}
-  \vspace{0.8cm}
-  \item 模型在验证集上准确率达 \textbf{89.57\% $\pm$ 0.43\%}，在多种扰动下表现稳健，具\textbf{低计算开销与良好可扩展性}。
+  \item 为主分类器融合所有分支嵌入后线性层的输出（未经过 Sigmoid）；
+  \item 正值表示模型倾向判为 \textbf{AI}，负值表示倾向 \textbf{非 AI}；
+  \item 绝对值大小反映决策置信度；
+  \item 可视为样本被判为 AI 的“力度”指标，用于衡量扰动前后决策信号变化。
 \end{itemize}
+
+\end{frame}
+\begin{frame}[fragile,allowframebreaks]{量化分析：logit 与 contrib 指标定义}
+\vspace{0.6em}
+\textbf{2. Contribution 指标：}
+\begin{itemize}
+  \item \textbf{Grad$\times$Input}，
+    \[
+      \mathrm{contrib}_k \approx
+      \sum_{j \in \mathcal{I}_k}
+      \frac{\partial y}{\partial z_j}\, z_j,
+    \]
+    其中 $\mathcal{I}_k$ 表示第 $k$ 个分支在拼接向量中的索引集合。
+  \item $\mathrm{contrib}_k > 0$ 表示该分支对判决结果具有正向推动作用（倾向于判为 AI），
+        $\mathrm{contrib}_k < 0$ 则表示负向作用（倾向于判为非 AI）。
+\end{itemize}
+\end{frame}
+
+\begin{frame}{量化分析结果：分支贡献对比}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.7\linewidth]{images_in_paper/contrib_means_by_class.png}
+  \caption{各分支在 AI 与非 AI 样本上的平均贡献值（均值±标准误差）。}
+  \label{fig:contrib_means}
+\end{figure}
 \end{frame}
 \end{document}
