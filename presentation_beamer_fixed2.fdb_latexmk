@@ -1,10 +1,10 @@
 # Fdb version 4
-["xdvipdfmx"] 1759824722.78906 "presentation_beamer_fixed2.xdv" "presentation_beamer_fixed2.pdf" "presentation_beamer_fixed2" 1759824725.73712 0
-  "presentation_beamer_fixed2.xdv" 1759824722.6337 269368 4dd013889b934bc76c17676831082960 "xelatex"
+["xdvipdfmx"] 1761229201.62373 "presentation_beamer_fixed2.xdv" "presentation_beamer_fixed2.pdf" "presentation_beamer_fixed2" 1761229204.90378 0
+  "presentation_beamer_fixed2.xdv" 1761229201.43309 241860 0e09b935dca693031dc0d28fca26b40a "xelatex"
   (generated)
   "presentation_beamer_fixed2.pdf"
   (rewritten before read)
-["xelatex"] 1759824718.71228 "presentation_beamer_fixed2.tex" "presentation_beamer_fixed2.xdv" "presentation_beamer_fixed2" 1759824725.73346 0
+["xelatex"] 1761229197.06704 "presentation_beamer_fixed2.tex" "presentation_beamer_fixed2.xdv" "presentation_beamer_fixed2" 1761229204.89939 0
   "/home/flyingbucket/apps/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/home/flyingbucket/apps/texlive/2025/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/home/flyingbucket/apps/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -259,11 +259,11 @@
   "images_in_paper/model.png" 1759719966.27294 415970 e4db7765fd13495ddc690453cfcd292d ""
   "images_in_paper/roc_formant.png" 1759719966.2741 41709 10893f53ca87c88833a6a2472108d2aa ""
   "images_in_paper/roc_time.png" 1759719966.27594 40335 1b543f209766297406ff44b8ee5522d1 ""
-  "presentation_beamer_fixed2.aux" 1759824722.63071 17910 229d4791b939193bde62da206a9200ed "xelatex"
-  "presentation_beamer_fixed2.nav" 1759824722.6337 8516 83d154376ff595ece0dcd7576d4d3aa1 "xelatex"
-  "presentation_beamer_fixed2.out" 1759824722.6337 1417 6ca4cdab0a44f11425b6415dca3aa0c8 "xelatex"
-  "presentation_beamer_fixed2.tex" 1759824713.32068 34809 0ace4fe0e7e7e1b7d2ad663e35edaf3f ""
-  "presentation_beamer_fixed2.vrb" 1759824722.17744 657 f65559b924779c7d78d2480f17c55b4c "xelatex"
+  "presentation_beamer_fixed2.aux" 1761229201.43009 16887 d4fdded2ce8ace4f6d963ae3633b4e63 "xelatex"
+  "presentation_beamer_fixed2.nav" 1761229201.43309 8037 add106059ad97c1c9b997b0fe8b0fe70 "xelatex"
+  "presentation_beamer_fixed2.out" 1761229201.43309 1235 669dff41f4f7f2ffd1b72718485c9159 "xelatex"
+  "presentation_beamer_fixed2.tex" 1761228377.53354 35336 41e1f29c0f2f750c7f64a13f94be297e ""
+  "presentation_beamer_fixed2.vrb" 1761229201.00609 827 43626e6230b270fae8bf1db531ba9e05 "xelatex"
   (generated)
   "presentation_beamer_fixed2.aux"
   "presentation_beamer_fixed2.log"

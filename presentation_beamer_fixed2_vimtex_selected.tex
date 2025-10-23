@@ -1,10 +1,11 @@
 \documentclass[aspectratio=169]{beamer}
-\usetheme{gotham}
-\useoutertheme[
-  progressbar position=foot,   % 进度条位置：foot/head/none
-  progressbar style=rectangle, % 样式：rectangle/rounded box/circle
-  numbering=totalframenumber   % 页码样式：none/framenumber/totalframenumber
-]{gotham}
+\usetheme{metropolis}
+% \usetheme{gotham}
+% \useoutertheme[
+%   progressbar position=foot,   % 进度条位置：foot/head/none
+%   progressbar style=rectangle, % 样式：rectangle/rounded box/circle
+%   numbering=totalframenumber   % 页码样式：none/framenumber/totalframenumber
+% ]{gotham}
 
 \usefonttheme{professionalfonts} % 使用系统/自定字体
 
@@ -23,6 +24,7 @@
 \providecommand{\paragraph}[1]{\smallskip\textbf{#1}\par}
 
 % 常用包
+\usepackage{longtable,booktabs}
 \usepackage{amsmath,amssymb}
 \usepackage{graphicx}
 \graphicspath{{.}{./figs/}{./images/}{./images_in_paper/}}
@@ -48,36 +50,26 @@
 
 %---Document Begins---
 \begin{document}
-
-\begin{frame}
-  \titlepage
-\end{frame}
-
-
-% 摘要页（无页眉，允许自动换页）
-\begin{frame}[plain,allowframebreaks]{摘要}
+\begin{frame}{摘要}
 \small
+\begin{itemize}
+  \item 问题一：
+    \begin{itemize}
+      \item 基于\textbf{多分支卷积神经网络（Multi-Branch CNN）}的端到端 AI 音频检测与评分模型；
+      \item 从\textbf{时域、频域及声学统计量}等角度提取 11 类特征，多分支并行融合判别；
+    \end{itemize}
 
-\begin{center}
-  \textbf{\huge 摘\quad 要}
-\end{center}
-\vspace{0.2cm}
+  \item 问题二：
+    \begin{itemize}
+      \item 设计\textbf{分支探针机制}，依据各分支判别准确率加权，构建可解释的 AI 痕迹评分；
+    \end{itemize}
 
-% \begin{abstract}
-针对AI音频的识别问题，本文提出一种基于\textbf{多分支卷积神经网络（Multi-Branch CNN)}的
-端到端 AI 音频检测与评分模型。
-
-从\textbf{时域、频域及声学常见统计量}等多角度提取 11 类特征，分别经五个并行分支建模后融合判别。
-针对单分支贡献的量化问题，引入\textbf{分支探针}机制，
-基于各分支独立判别准确率确定加权系数，构建可解释的 AI 痕迹综合评分体系。
-
-本文设计多种扰动与对抗性处理（如频谱均衡、高频注入、环境噪声混入等）评估模型鲁棒性，并结合分支贡献分析揭示其在时域包络与共振峰布局上的依赖性。实验结果表明，该模型在验证集上准确率可达 89\%–90\%，在多数轻中度扰动下保持稳定性能，综合评分在强扰动下亦具较高稳健性。本文方法具有较低计算开销与良好可扩展性，可推广至语音伪造检测、环境音识别等领域。
-
-% \end{abstract}
-
-\vspace{0.5em}
-\noindent\textbf{关键词：} AI 音乐检测；多分支CNN；音频特征提取；探针机制；AI 痕迹评分
-
+  \item 问题三：
+    \begin{itemize}
+      \item 引入\textbf{频谱均衡、高频注入、环境噪声混入}等扰动测试模型鲁棒性；
+    \end{itemize}
+  \vspace{0.8cm}
+  \item 模型在验证集上准确率达 \textbf{89.57\% $\pm$ 0.43\%}，在多种扰动下表现稳健，具\textbf{低计算开销与良好可扩展性}。
+\end{itemize}
 \end{frame}
-
 \end{document}

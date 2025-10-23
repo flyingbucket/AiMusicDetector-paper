@@ -1,0 +1,9 @@
+\frametitle{归因分析：分支数据流特征与扰动敏感性的关联}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.45\linewidth]{images_in_paper/embed_time_tsne.png}
+  \hfill
+  \includegraphics[width=0.45\linewidth]{images_in_paper/embed_time_pca.png}
+  \caption{figure}{时域分支嵌入可视化：t-SNE（左）与 PCA（右）。}
+  \label{fig:time_tsne_pca}
+\end{figure}

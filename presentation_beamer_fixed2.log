@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.30)  7 OCT 2025 16:11
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2025.8.30)  23 OCT 2025 22:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1179,46 +1179,20 @@ Overfull \vbox (47.92595pt too high) detected at line 56
 [1
 
 ]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 80.
+ (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
+ (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
 
 [2
 
 ]
 
 [3
-
-
-]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 88.
- (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 88.
- (/home/flyingbucket/apps/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-[4
-
-]
-\openout4 = `presentation_beamer_fixed2.vrb'.
-
- (./presentation_beamer_fixed2.vrb)
-
-[5
-
-]
-\openout4 = `presentation_beamer_fixed2.vrb'.
-
- (./presentation_beamer_fixed2.vrb)
-
-[6
-
-]
-\openout4 = `presentation_beamer_fixed2.vrb'.
-
- (./presentation_beamer_fixed2.vrb)
-
-[7
 
 ]
 \openout4 = `presentation_beamer_fixed2.vrb'.
@@ -1256,15 +1230,15 @@ Package fontspec Info:
 
 )
 
-[8
+[4
 
 ]
-Overfull \vbox (36.00215pt too high) detected at line 144
+Overfull \vbox (36.11415pt too high) detected at line 129
  []
 
 
 
-[9
+[5
 
 
 ]
@@ -1275,12 +1249,43 @@ File: images_in_paper/model.png Graphic file (type bmp)
 <images_in_paper/model.png>
 )
 
+[6
+
+]
+
+[7
+
+
+]
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+ (./presentation_beamer_fixed2.vrb)
+
+[8
+
+]
+File: images_in_paper/acc_train_val.png Graphic file (type bmp)
+<images_in_paper/acc_train_val.png>
+File: images_in_paper/loss_train_val.png Graphic file (type bmp)
+<images_in_paper/loss_train_val.png>
+
+Overfull \vbox (11.77298pt too high) detected at line 190
+ []
+
+
+
+[9
+
+]
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+ (./presentation_beamer_fixed2.vrb)
+
 [10
 
 ]
 
 [11
-
 
 ]
 \openout4 = `presentation_beamer_fixed2.vrb'.
@@ -1293,15 +1298,12 @@ File: images_in_paper/model.png Graphic file (type bmp)
 
 [13
 
-
 ]
-File: images_in_paper/acc_train_val.png Graphic file (type bmp)
-<images_in_paper/acc_train_val.png>
-File: images_in_paper/loss_train_val.png Graphic file (type bmp)
-<images_in_paper/loss_train_val.png>
 
-Overfull \vbox (11.77298pt too high) detected at line 205
- []
+Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
+(xeCJK)                
+(xeCJK)                Try to use `\setCJKmonofont[<...>]{<...>}' to define
+(xeCJK)                it.
 
 
 
@@ -1315,13 +1317,13 @@ Overfull \vbox (11.77298pt too high) detected at line 205
 [15
 
 ]
-\openout4 = `presentation_beamer_fixed2.vrb'.
-
- (./presentation_beamer_fixed2.vrb)
 
 [16
 
 ]
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+ (./presentation_beamer_fixed2.vrb)
 
 [17
 
@@ -1336,19 +1338,17 @@ Overfull \vbox (11.77298pt too high) detected at line 205
 
 [19
 
-
 ]
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+ (./presentation_beamer_fixed2.vrb)
 
 [20
 
 ]
+\openout4 = `presentation_beamer_fixed2.vrb'.
 
-Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
-(xeCJK)                
-(xeCJK)                Try to use `\setCJKmonofont[<...>]{<...>}' to define
-(xeCJK)                it.
-
-
+ (./presentation_beamer_fixed2.vrb)
 
 [21
 
@@ -1360,6 +1360,9 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 [22
 
 ]
+\openout4 = `presentation_beamer_fixed2.vrb'.
+
+ (./presentation_beamer_fixed2.vrb)
 
 [23
 
@@ -1373,13 +1376,19 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 ]
 \openout4 = `presentation_beamer_fixed2.vrb'.
 
- (./presentation_beamer_fixed2.vrb)
+ (./presentation_beamer_fixed2.vrb
+
+LaTeX Font Warning: Font shape `TU/SourceHanSansCN(0)/m/it' undefined
+(Font)              using `TU/SourceHanSansCN(0)/m/n' instead on input line 9.
+
+)
 
 [25
 
 ]
 
 [26
+
 
 ]
 \openout4 = `presentation_beamer_fixed2.vrb'.
@@ -1389,16 +1398,28 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 [27
 
 ]
-\openout4 = `presentation_beamer_fixed2.vrb'.
+File: images_in_paper/embed_time_tsne.png Graphic file (type bmp)
+<images_in_paper/embed_time_tsne.png>
+File: images_in_paper/embed_time_pca.png Graphic file (type bmp)
+<images_in_paper/embed_time_pca.png>
 
- (./presentation_beamer_fixed2.vrb)
+Overfull \vbox (16.94043pt too high) detected at line 547
+ []
+
+
 
 [28
 
 ]
-\openout4 = `presentation_beamer_fixed2.vrb'.
+File: images_in_paper/embed_formant_tsne.png Graphic file (type bmp)
+<images_in_paper/embed_formant_tsne.png>
+File: images_in_paper/embed_formant_pca.png Graphic file (type bmp)
+<images_in_paper/embed_formant_pca.png>
 
- (./presentation_beamer_fixed2.vrb)
+Overfull \vbox (16.94043pt too high) detected at line 577
+ []
+
+
 
 [29
 
@@ -1417,62 +1438,63 @@ Package xeCJK Warning: Unknown CJK family `\CJKttdefault' is being ignored.
 [31
 
 ]
-\openout4 = `presentation_beamer_fixed2.vrb'.
+File: images_in_paper/contrib_means_by_class.png Graphic file (type bmp)
+<images_in_paper/contrib_means_by_class.png>
 
- (./presentation_beamer_fixed2.vrb
+Overfull \vbox (1.49068pt too high) detected at line 617
+ []
 
-LaTeX Font Warning: Font shape `TU/SourceHanSansCN(0)/m/it' undefined
-(Font)              using `TU/SourceHanSansCN(0)/m/n' instead on input line 9.
 
-)
 
 [32
-
-]
-
-[33
-
 
 ]
 \openout4 = `presentation_beamer_fixed2.vrb'.
 
  (./presentation_beamer_fixed2.vrb)
 
+[33
+
+]
+File: images_in_paper/contrib_means_by_class.png Graphic file (type bmp)
+<images_in_paper/contrib_means_by_class.png>
+
+Overfull \vbox (34.77531pt too high) detected at line 643
+ []
+
+
+
 [34
 
 ]
-\openout4 = `presentation_beamer_fixed2.vrb'.
-
- (./presentation_beamer_fixed2.vrb
-File: images_in_paper/embed_time_tsne.png Graphic file (type bmp)
-<images_in_paper/embed_time_tsne.png>
-File: images_in_paper/embed_time_pca.png Graphic file (type bmp)
-<images_in_paper/embed_time_pca.png>
-)
 
 [35
 
 ]
+File: images_in_paper/contrib_correlation.png Graphic file (type bmp)
+<images_in_paper/contrib_correlation.png>
+
+Overfull \vbox (28.42847pt too high) detected at line 670
+ []
+
+
 
 [36
 
-
 ]
-\openout4 = `presentation_beamer_fixed2.vrb'.
-
- (./presentation_beamer_fixed2.vrb
-File: images_in_paper/embed_formant_tsne.png Graphic file (type bmp)
-<images_in_paper/embed_formant_tsne.png>
-File: images_in_paper/embed_formant_pca.png Graphic file (type bmp)
-<images_in_paper/embed_formant_pca.png>
-)
 
 [37
 
 ]
+File: images_in_paper/contrib_violin_all.png Graphic file (type bmp)
+<images_in_paper/contrib_violin_all.png>
+
+Overfull \vbox (19.20117pt too high) detected at line 699
+ []
+
+
 
 [38
-
 
 ]
 \openout4 = `presentation_beamer_fixed2.vrb'.
@@ -1489,10 +1511,7 @@ File: images_in_paper/embed_formant_pca.png Graphic file (type bmp)
 ]
 \openout4 = `presentation_beamer_fixed2.vrb'.
 
- (./presentation_beamer_fixed2.vrb
-File: images_in_paper/contrib_means_by_class.png Graphic file (type bmp)
-<images_in_paper/contrib_means_by_class.png>
-)
+ (./presentation_beamer_fixed2.vrb)
 
 [41
 
@@ -1502,61 +1521,17 @@ File: images_in_paper/contrib_means_by_class.png Graphic file (type bmp)
 
 
 ]
-
-[43
-
-
-]
-\openout4 = `presentation_beamer_fixed2.vrb'.
-
- (./presentation_beamer_fixed2.vrb)
-
-[44
-
-]
-File: images_in_paper/contrib_means_by_class.png Graphic file (type bmp)
-<images_in_paper/contrib_means_by_class.png>
-File: images_in_paper/contrib_correlation.png Graphic file (type bmp)
-<images_in_paper/contrib_correlation.png>
-
-Overfull \vbox (380.79065pt too high) detected at line 669
- []
-
-
-
-[45
-
-]
-File: images_in_paper/contrib_violin_all.png Graphic file (type bmp)
-<images_in_paper/contrib_violin_all.png>
-
-Overfull \vbox (143.1272pt too high) detected at line 695
- []
-
-
-
-[46
-
-]
-Overfull \vbox (80.25845pt too high) detected at line 736
- []
-
-
-
-[47
-
-]
 File: images_in_paper/roc_time.png Graphic file (type bmp)
 <images_in_paper/roc_time.png>
 File: images_in_paper/roc_formant.png Graphic file (type bmp)
 <images_in_paper/roc_formant.png>
 
-Overfull \vbox (193.19684pt too high) detected at line 769
- []
 
+[43
 
+]
 
-[48
+[44
 
 ]
 File: images_in_paper/branch_metrics_auc_acc.png Graphic file (type bmp)
@@ -1564,7 +1539,27 @@ File: images_in_paper/branch_metrics_auc_acc.png Graphic file (type bmp)
 File: images_in_paper/branch_fisher.png Graphic file (type bmp)
 <images_in_paper/branch_fisher.png>
 
-Overfull \vbox (51.89659pt too high) detected at line 794
+
+[45
+
+]
+
+[46
+
+]
+
+[47
+
+]
+Overfull \vbox (27.0788pt too high) detected at line 872
+ []
+
+
+
+[48
+
+]
+Overfull \vbox (23.05188pt too high) detected at line 896
  []
 
 
@@ -1574,30 +1569,6 @@ Overfull \vbox (51.89659pt too high) detected at line 794
 ]
 
 [50
-
-]
-
-[51
-
-]
-Overfull \vbox (27.14279pt too high) detected at line 865
- []
-
-
-
-[52
-
-]
-Overfull \vbox (23.05188pt too high) detected at line 889
- []
-
-
-
-[53
-
-]
-
-[54
 
 ]
 \tf@nav=\write6
@@ -1619,15 +1590,15 @@ L3 programming layer <2022/07/14>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `presentation_beamer_fixed2.out' has not changed.
-(rerunfilecheck)             Checksum: 6CA4CDAB0A44F11425B6415DCA3AA0C8;1417.
+(rerunfilecheck)             Checksum: 669DFF41F4F7F2FFD1B72718485C9159;1235.
  ) 
 Here is how much of TeX's memory you used:
- 33651 strings out of 468441
- 780608 string characters out of 5439576
- 1141393 words of memory out of 5000000
- 61342 multiletter control sequences out of 15000+600000
+ 33587 strings out of 468441
+ 778238 string characters out of 5439576
+ 1137393 words of memory out of 5000000
+ 61286 multiletter control sequences out of 15000+600000
  636992 words of font info for 138 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  128i,13n,142p,1893b,788s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on presentation_beamer_fixed2.xdv (54 pages, 269368 bytes).
+Output written on presentation_beamer_fixed2.xdv (50 pages, 241860 bytes).

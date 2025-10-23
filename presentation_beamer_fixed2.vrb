@@ -1,14 +1,21 @@
-\frametitle{量化分析结果：分支贡献对比}
-\textbf{结果概要：}
+\frametitle{量化分析结果：主要分支的判别能力}
+
+\textbf{结论概览：}
+扰动敏感性与各分支的单独判别能力高度一致。
+
+\vspace{0.6em}
+\textbf{定量结果（5 折交叉验证）：}
 \begin{itemize}
-  \item 图~\ref{fig:contrib_means} 展示了不同分支在 AI 与非 AI 样本上的
-        平均贡献值（均值 ± 标准误差）；
-  \item \texttt{spec} 分支在两类样本中均呈显著\textbf{正贡献}，
-        推高 AI 判别概率；
-  \item \texttt{time} 分支整体为\textbf{负贡献}，
-        对 AI 判别起抑制作用，且幅度较大；
-  \item \texttt{prosody}、\texttt{formant} 与 \texttt{hjorth} 分支的贡献幅度较小，
-        表明其对最终判决的直接推动作用有限。
+  \item \textbf{时域分支（time）：}
+    AUC $=0.8251\!\pm\!0.0076$，ACC $=0.7627\!\pm\!0.0025$，Fisher 比率 $=0.1324$；
+  \item \textbf{formant 分支：}
+    AUC $=0.8161\!\pm\!0.0077$，ACC $=0.7413\!\pm\!0.0101$，Fisher 比率 $=0.0912$；
+  \item 均显著高于 \texttt{prosody}（AUC $0.7191$，Fisher $0.0071$）与
+        \texttt{hjorth}（AUC $0.6963$，Fisher $0.0054$）；
+  \item 表明模型决策更依赖：
+    \begin{itemize}
+      \item \textbf{时域包络 / 动态结构}；
+      \item \textbf{人声共振峰布局特征}。
+    \end{itemize}
 \end{itemize}
 
-% \vspace{0.6em}
